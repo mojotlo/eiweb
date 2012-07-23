@@ -1,0 +1,71 @@
+body {background-color:  #57b6dd;}
+
+@font-face {
+  font-family: "Amperzand";
+  src: url(/fonts/Amperzand.ttf) 
+	format("truetype");
+}
+
+
+@font-face {
+  font-family: "Arabolic";
+  src: url(/fonts/Arabolic.ttf) 
+	format("truetype");
+}
+#ei { font-family: "Arabolic", sans-serif; font-size: 50pt;
+text-align: center; float: left; }
+#tagline {float: left; text-align: center; width: 100%;
+	 font-family: "Amperzand", sans-serif; font-size: 30pt; 
+		margin-top: .5em;}
+		
+#nav {font-family: "Amperzand"; float: left; width: 76.5%; margin-left: 10%; 		
+	margin-bottom: .2em;	
+	font-size: 20pt; color: white; background: black; margin-top: 0;
+ 	list-style-type: none; padding: 0; 
+	border-style: solid; border-width: 5px;  border-color: #262626; 
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px;
+	}
+
+#nav li {margin-bottom: .4em; color: white; float: left; width: 19.7%;
+	text-align: center;
+	padding-top: .2em;
+	border-right: solid .1em #262626;}
+li#contact_link {border-right: none;}
+#nav a {color: white;}
+#nav a:hover {color: #57b6dd;}
+#header {float: left; width: 56%; position: relative; color: black;}
+#header img  {float:left; width: 100%; 
+	margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
+#header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
+	position: relative;}
+
+
+#email {font-weight: 900;}
+
+#central_container {margin: 0 auto; float: left; margin-left: 10%; width: 75%; 	
+	position: relative; background-color: black; 
+	border-style: solid; border-width: 15px;  border-color: black; 
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	background: #333 url("../../images/steel_texture.png");}
+
+#facebook_like {width: 225px; border: solid .3em white;}
+#central_container p {font-size: 14pt; color: white; font-family: arial;}	
+
+
+
+#right_column {width: 57%; margin-left: 3%; position: relative; float: left;}
+
+#left_column {width: 35%; position: relative; float: left; background: none repeat scroll 0% 0% rgb(38, 38, 38); padding-left: 5%; margin: 0px;}
+#left_column p {font-size: 10pt;}
+#left_column iframe {background: #57b6dd;}
+#twitter_explanation {width: 75%; margin-left: 0}
+#twitter_explanation a {color: white; font-weight: 900}
+#twtr-widget-1 {margin-top: .4em;}
+#left_column a {border: none;; padding: none; }
+#left_column a img  {border: none;}
+#footer {float: left; width: 100%;}
+
+
+

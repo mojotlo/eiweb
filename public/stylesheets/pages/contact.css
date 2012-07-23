@@ -1,0 +1,24 @@
+@import url("/stylesheets/site_all.css");
+
+#header {width: 25%;}
+#header img {width: 100%; float: left; margin-top: 1em;}
+#general {float: left; width: 73%; margin-left: 2%;}
+
+.media{float: left; width: 21%; padding: .1em; color: white; font-size: 1.2em}
+.value {float: left; width: 74%;}
+
+.wrapper {float: left; width: 100%; margin-top: .4em}
+.wrapper a {color: black; text-decoration: underline;}
+span.value {font-size: 1.4em;}
+
+
+.keyword {float: left; width: 40%}
+.explanation {float: left; width: 59%; margin-left: 1%}
+#right_column h2 {float: left; width: 100%, padding: 0; font-family: "arabolic"; font-size: 2em;}
+#right_column p {float: left; width: 100%; margin: 0;}
+#right_column h3 {float: left; width: 100%;font-family: "arabolic"}
+#party img {float: left; width: 50%;}
+p#first {float: left; width: 50%; }
+img#cell {float: left; width: 30%;}
+
+h2#text-title {font-size: 2em; width: 30%}

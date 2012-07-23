@@ -1,0 +1,40 @@
+<p id="twitter_explanation"> <a href="/contact#textmark"> Sign up </a>for text alerts to receive a message every time we roll into your neighborhood or
+check out our Twitter feed below for our current whereabouts </p>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#ebd407'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('EmpanadaIntifad').start();
+</script>
+<a href="http://twitter.com/empanadaintifad"><img src="http://www.twitterbuttons.com/upload/images/6a2fe834b0twitter-wb-fm.png" title="By: TwitterButtons.com" alt="By: TwitterButtons.com" width="159" height="48" /></a><br />
+
+<div id="facebook_like">
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/#!/pages/Empanada-Intifada/133278696723345" width="225"></fb:like>
+</div>
+
+<p></p>
