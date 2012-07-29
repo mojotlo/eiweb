@@ -29,11 +29,13 @@ opaciity:  0.0;
 
 #news {float: left; width: 100%}
 #news_left {float: left; width: 25%; }
-#news h3 {font-size: 14pt; font-family: "Arabolic", sans-serif; }
-#news_right {float: left; width: 70%; position: relative; }
-a.news-item {float: left; width: 100%; margin-bottom: .4em}
-.news-item img {width: 10%; float: left;}
-.news-item {color: white; font-weight: 800; ;}
-.news-item span {margin-left: 5%; float: right; text-decoration: underline; font-family: arial; font-size: 12pt; width: 85%;}
+#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif;}
+#news_right {float: left; width: 70%; margin-left: 3%; position: relative; }
+a.news-item {float: left; width: 100%; margin-bottom: .4em; position: relative;}
+.news-item img {width: 13%; float: left;}
+.news-item { color: white; font-weight: 800; ;}
+.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 12pt; width: 80%; float: left;}
+#details {widith: 1.5em;em;}
 
-
+#right_column h2 {font-family: "arabolic"; font-size: 2em; width: 100%; float: left; color: white;}
+#right_column h2 a {color: white;}

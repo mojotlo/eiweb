@@ -1,3 +1,6 @@
 @import url("/stylesheets/site_all.css");
 
-#central_container img {margin: auto; float: left;}
+#left_column {width: 24%; padding-left: .6em}
+#right_column img {margin: auto; float: left; margin-top: .3em;}
+#right_column  h2 {font-family: "Arabolic"; float: left; width: 100%;  font-size: 2em;}
+#right_column a {color: white;}

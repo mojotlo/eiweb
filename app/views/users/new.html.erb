@@ -1,0 +1,104 @@
+<%= render :partial => "shared/nav_bar"%>
+<div id="central_container">
+
+
+	<div id="left_column">
+	<%= render :partial => "shared/left_column"%>
+	</div>
+	<div id="right_column">
+<div id='header'>
+	<img src='/images/empanada-logo.png' alt="logo"/>
+</div>
+
+<div id="general">
+<span class="wrapper">
+	<span class="media">	email: </span>
+	
+	<span class="value">
+	<a href="mailto:empanadaintifada@gmail.com">empanadaintifada@gmail.com</a>			
+	</span>
+	
+	
+	</span>
+
+<span class="wrapper"><span class="media">	cell: </span><span class="value"> (504) 684-5358	</span></span>
+<span class="wrapper"><span class="media">	blog: </span><span class="value"> <a href="http://empanadaintifada.tumblr.com" target="_blank"> empanadaintifada.tumblr.com	</a></span></span>
+
+<span class="wrapper"><span class="media">	facebook:</span><span class="value"> <a href='http://www.fb.com/empanadaintifada' target="_blank">fb.com/empanadaintifada	</a></span></span>
+
+<span class="wrapper"><span class="media">	twitter: </span><span class="value"><a href="http://www.twitter.com/empanadaintifad" target="_blank">@empanadaintifad</a></span></span>
+</div>
+<div id="party">
+
+	
+<a name= "email-signup" ><h2><a name= "email-signup" >Sign up for email notifications</a></h2>
+<p>Get our email newsletter - <span id="newsletter_title"> The Street Eats Beat</span></p>
+<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
+<%=render "shared/error_messages", :object  => f.object%>
+<div class="field">	
+	<%=f.label :name %>
+	<%=f.text_field :name, :placeholder => "Name"%>
+</div>
+<div class="field">
+	<%=f.label :email %>
+	<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+</div>
+
+<div class="actions">
+	<%=f.submit "Signup!" %>
+</div>
+<%end%>
+
+</div>
+<a name="text-signup">
+		<h2>Join a Text Message Group!</h3>
+	</a>
+		<ol>
+			<li>
+				You've got options: choose one of the text message groups below.  
+			</li>
+			<li>Text the keyword in CAPS to (504) 684-5358.  </li>
+			<li>Enjoy blowing your friends out of the water with your ability to smell empanadas from miles away. You'll receive a text when we're coming to your area. </li>
+		</ol>
+<div class="text_instruction_wrapper">
+	<span class="keyword">text FANATIC to (504)684-5358  </span> 
+
+	<span class="explanation">(Get every movement of the Empanada Intifada)</span>
+	</div>
+	<div class="text_instruction_wrapper">
+		
+	<span class="keyword">text DAILY to (504)684-5358 </span>
+	<span class="explanation"> (Get a daily digest text with the general outlines of our plan each morning).  </span>
+	</div>
+	<div class="text_instruction_wrapper">
+				
+	<span class="keyword">text TULANE to (504)684-5358 </span><span class="explanation">(Uptown near Tulane and Loyola campuses)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">		
+	<span class="keyword">text BROAD to (504)684-5358  </span><span class="explanation">(Broad St between Canal and Poydras)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">
+	<span class="keyword">text UPTOWN to (504)684-5358 </span> <span class="explanation"> (Uptown watering holes and lunch spots)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">
+	<span class="keyword">text CBD to (504)684-5358 </span><span class="explanation">(the outskirts of the CBD - either Claiborne Ave near hospitals or Howard Ave)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">
+	<span class="keyword">text GARDEN to (504)684-5358  </span> <span class="explanation">(the Garden District and Central City)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">
+	<span class="keyword">text FRENCHMEN to (504)684-5358  </span> <span class="explanation">(Frenchmen, late night and maybe lunch)</span>
+	</div>
+	
+	<div class="text_instruction_wrapper">
+	<span class="keyword">text BYWATER to (504)684-5358 </span><span class="explanation">	(The rest of the Marigny/Bywater)</span>
+	</div>
+
+</div>
+	
+	

@@ -1,8 +1,30 @@
 source 'http://rubygems.org'
 
+gem 'mail'
 gem 'rails', '3.0.9'
-
 gem 'pg'
+gem 'rmagick' 
+gem "paperclip", "~> 3.0"
+
+group :development do
+  gem 'rspec-rails'
+  gem 'annotate', ">=2.5.0.pre1"
+  gem 'faker', '0.3.1'
+end
+
+group :test do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'rspec-rails'
+  gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc8'
+  gem 'factory_girl_rails', '1.0'
+  gem 'autotest', '4.4.6'
+  gem 'autotest-rails-pure', '4.1.2'
+  gem 'autotest-fsevent', '0.2.5'
+  gem 'autotest-growl', '0.2.9'
+end
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

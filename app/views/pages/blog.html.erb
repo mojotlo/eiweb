@@ -1,14 +1,20 @@
-<%= render :partial => "nav_bar"%>
+<%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
 
 <div id="central_content">
 	<div id="left_column">
-	<%= render :partial => "left_column"%>
+	<%= render :partial => "shared/left_column"%>
 	</div>
 	<div id="right_column">
-			<%= render :partial => "header"%>
-		<p>Behind the scenes look into the latest Empanada Innovations.  Check out our <a href="http://empanadaintifada.tumblr.com">Tumblr blog </a> to join in the fun.  
+		<section id="explanation">
+			<img src="images/empanada-logo.png" alt="logo"/>
+			<p>Behind the scenes look into the latest Empanada Innovations.  Check out our <a href="http://empanadaintifada.tumblr.com">Tumblr blog </a> to join in the fun.  </p>
+		</section>
+					
+					
 <script type="text/javascript" src="http://empanadaintifada.tumblr.com/js"></script>
 
 </div>
 </div>
+</div>
+	<%= render :partial => "shared/footer" %>

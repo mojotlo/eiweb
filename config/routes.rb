@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  resources :users
   map.home '/', :controller => 'pages', :action => 'home'
   map.contact '/contact', :controller => 'pages', :action => 'contact'
   map.about '/about', :controller => 'pages', :action => 'about'
@@ -6,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.blog '/blog', :controller => 'pages', :action => 'blog' 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+
+
 end
   # The priority is based upon order of creation: first created -> highest priority.
 

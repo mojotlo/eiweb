@@ -1,15 +1,21 @@
-<%= render :partial => "nav_bar"%>
+<%= render :partial => "shared/nav_bar"%>
+
 <div id="central_container">
 
 
 	<div id="left_column">
-	<%= render :partial => "left_column"%>
+	<%= render :partial => "shared/left_column"%>
 	</div>
 	<div id="right_column">
 <div id='header'>
 	<img src='/images/empanada-logo.png' alt="logo"/>
 </div>
-
+<section class="round">
+	<% flash.each do |key, value| %>
+	<div class="flash <%=key %>"><%= value %></div>
+	<% end %>
+	<%= yield %>
+</section>
 <div id="general">
 <span class="wrapper">
 	<span class="media">	email: </span>
@@ -31,47 +37,28 @@
 <div id="party">
 <h2>Catering and Private Parties</h2>
 
-<p id="first">  The Empanada Intifada loves adding flavor to festive occasions. We've been there for birthday parties, work meetings, film shoots, engagement parties, rehearsals, fundraisers, soirees, shindigs, and the occasional hootenanny.</p> <img src='/images/empanada-party.jpg' alt="party"/>
+<p id="first">  The Empanada Intifada loves adding flavor to festive occasions, and our Solar-Electric truck let's your guests can enjoy their meals without having to talk over a generator.  We've been there for birthday parties, work meetings, film shoots, engagement parties, rehearsals, fundraisers, soirees, shindigs, and the occasional hootenanny.</p> <img src='/images/empanada-party.jpg' alt="party"/>
 <p>Contact us for details: empanada.intifada@gmail.com or (504) 684-5358</p>
 </div>
+<h2><a name="textmark">	<%=link_to "Where is the Empanada Intifada?" , new_user_path, :class => "signup_button_round"%> </a></h2>
 <div id="texts">
 
 
-		<h2 id="text-title"><a name="textmark">Text message alerts!</a></h2>
+		<h2 id="text-title">Text message alerts!</h2>
 		<img id="cell"src='/images/cell-phone-texting-crop.png' alt="cell"/>
 		
 <div id="crystal">		
-<p >Empanada Intifada could be anywhere depending on the vicissitudes of weather, parking, plain old dumb luck, and the whims of its pilots.  Luckily future-seeing crystal balls have been placed in your phones and computers.  </p> <img src="/images/crystal-ball-truck.png"/>
-</div>
+<p >Empanada Intifada could be anywhere depending on the vicissitudes of weather, parking, plain old dumb luck, and the whims of its pilots.  Luckily future-seeing crystal balls have been placed in your phones and computers.  </p> <img src="/images/crystal-ball-truck.png"/></div>
 <div id="text">
-	<p>If you want to know when the truck is rolling to your area in real time (and get exclusive text-message empanada giveaways), join one of the following text message groups. </p> 
-</div>
-		<h3>Here's how to join:</h3>
-	
-		<ol>
-			<li>
-				Choose one of the text message groups below.  
-			</li>
-			<li>Text the keyword in CAPS to (504) 684-5358.  </li>
-			<li>Enjoy blowing your friends out of the water with your ability to smell empanadas from miles away. You'll receive a text when we're coming to your area. </li>
-		</ol>
-	
-	<span class="keyword">TULANE</span><span class="explanation">(Uptown near Tulane and Loyola)</span>
-	<span class="keyword">BROAD </span><span class="explanation">(Broad St between Canal and Poydras)</span>
-	<span class="keyword">UPTOWN</span> <span class="explanation"> (Uptown watering holes and lunch spots)</span>
-	<span class="keyword">CBD </span><span class="explanation">(the outskirts of the CBD - either Claiborne Ave near hospitals or Howard Ave)</span>
-	<span class="keyword">GARDEN </span> <span class="explanation">(the Garden District and Central City)</span>
-	
-	<span class="keyword">FRENCHMEN </span> <span class="explanation">(Frenchmen, late night and maybe lunch)</span>
-	<span class="keyword">BYWATER</span><span class="explanation">	(The rest of the Marigny/Bywater)</span>
-	<span class="keyword">FANATIC </span> <span class="explanation">(Get every movement of the Empanada Intifada)</span>
-	<span class="keyword">DAILY</span><span class="explanation"> (Get a daily digest text with the general outlines of our plan each morning).  </span>
-</div>
-	
-	
-<a name="emailmark"><h2>Notes from the Empanada Intifada</h2></a>
-<p>Get weekly plans as well as deals and news by writing an email with subject line "SUBSCRIBE" to Empanada.Intifada@gmail.com</p>
-
-
+	<p>If you want to know when the truck is rolling to your area in real time (and get exclusive text-message empanada giveaways), <%=link_to "Join a text message group!" , new_user_path, :class => "signup_button_round"%></p>
 
 </div>
+<a name="emailmark"><h2>The Lost Art of Receiving Emails</h2></a>
+<p>Perhaps in this day and age of texts, push alerts, micro-tweeting mini-haikus, you just want to relax, let your hair down, and hear about our plans, aspirations, perspirations, and more in long form via email (~1 email per week).  We do that too!
+	<%=link_to "Sign up!" , new_user_path, :class => "signup_button_round"%>
+	</p>
+</div>
+
+</div>
+</div>
+	<%= render :partial => "shared/footer" %>

@@ -1,24 +1,31 @@
-<%= render :partial => "nav_bar"%>
+<%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
 <div id="central_content">
+	
 	<div id="left_column">
-	<%= render :partial => "left_column"%>
+	<%= render :partial => "shared/left_column"%>
 	</div>
+	
 	<div id="right_column">
+			<h1><img src="/images/empanada-logo.png" alt="Empanada Logo"/><span>The Emergence of the Intifada</span></h1>
+		<p>Based in the New Orleans Bywater, the Empanada Intifada is a labor of love. In the last two years, you've watched us take a 1981 Grumman Step Van and transform it into New Orleans' first Solar-Electric food truck, serving gourmet empanadas with fresh, local ingredients.  After years of operating in the shadows while renovating the truck, the Empanada Intifada is now operating full-time, in broad daylight.	 </p><img id="dream_truck" src="/images/dream_truck.png" alt="Dream Truck"/>
+		<p>For whereabouts, current menu, discounts, and more, register for our <a href="/users/new#text-signup">text-message </a> alert system, sign up for our <a href="/users/new#email-signup"> email newsletter</a>, and follow us on <a href="http://www.facebook.com/empanadaintifada" target="_blank">Facebook,</a> 
+		our blog at <a href="http://empanadaintifada.tumblr.com" target="_blank">Tumblr,</a> and 
+		<a href="http://twitter.com/empanadaintifad" target="_blank"> Twitter.</a></p>
+
 	<h1><img src="/images/empanada-logo.png" alt="Empanada Logo"/><span>The Origins of the Intifada</span></h1>
 
 	<p>Our careers involved bureaucratic cubicles and business casual wear.  
 	Our lives and resumes showed the outward trappings of success.
-	But there were inner warnings of existential decay. The only (un)suitable response was a rebellion 
-	against prescribed professionalism, an uprising against alienation, a shaking off of the trappings that had become a trap....an Intifada. </p>
+	But there were inner warnings of existential decay. The only (un)suitable response was a rebellion against prescribed professionalism, an uprising against alienation, a shaking off of the trappings that had become a trap....an Intifada. </p>
 
 	<p>In October 2010, re-devoted to the art of living, we hatched an exit plan from the institutions that confined us.  
 	Drawing upon our past lives in South America, we began the Empanada Intifada: a quest to create a 
 	gourmet food truck, serving SlapYourThigh delicious, life-reaffirming, health-promoting, local, seasonal,
 	damn-near-treasonously good empanadas. </p>
 
-	<p>After almost two years of operating in the shadows while renovating the truck, the Empanada Intifada is starting to operate full-time, in broad daylight. For whereabouts, current menu, discounts, and more, register for our <a href="/contact#textmark">text-message </a> alert system, sign up for our <a href="/contact#emailmark"> email newsletter</a>, or follow us on <a href="http://www.facebook.com/empanadaintifada" target="_blank">Facebook,</a> 
-	our blog at <a href="http://empanadaintifada.tumblr.com" target="_blank">Tumblr,</a> and 
-	<a href="http://twitter.com/empanadaintifad" target="_blank"> Twitter.</a></p>
-		<img id="dream_truck" src="/images/dream_truck.png" alt="Dream Truck"/>
+
 	</div>
+</div>
+</div>
+	<%= render :partial => "shared/footer" %>

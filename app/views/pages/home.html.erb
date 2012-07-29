@@ -1,11 +1,11 @@
-<%= render :partial => "nav_bar"%>
+<%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
 
 <div id="central_content">
 	<div id="left_column">
-	<%= render :partial => "left_column"%>
+	<%= render :partial => "shared/left_column"%>
 	</div>
-			<%= render :partial => "header"%>
+			<%= render :partial => "shared/header"%>
 	<div id="right_column">
 		<div id="news"> 
 			<div id="news_left">
@@ -18,7 +18,7 @@
 					<span> GoNOLA names EI top food truck </span> 
 				</a>
 				<a class="news-item" href="http://www.details.com/style-advice/food-and-drinks/201205/farmers-markets-at-night">
-					<img src="/images/details.jpg"/> 
+					<img id="details" src="/images/details.jpg"/> 
 					<span> Details Magazine Shows Love for the Mestizo Meat Pie</span> 
 				</a>
 				<a class="news-item" href="http://nola.eater.com/archives/2012/06/01/guerilla-trucking-with-empanad-intifadas-taylor-jackson.php">
@@ -40,5 +40,8 @@
 			</div>
 		</div>	
 		</div>
+	<h2> <a href="contact#textmark">Where is the Empanada Intifada?</a></h2>	
 	</div>
 </div>
+</div>
+	<%= render :partial => "shared/footer" %>
