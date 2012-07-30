@@ -1,14 +1,10 @@
 @import url("/stylesheets/site_all.css");
-@font-face {
-  font-family: "Amperzand";
-  src: url(/fonts/Amperzand.ttf) 
-	format("truetype");
-}
+
 
 #right_column h1 { float: left; width: 100%;}
 #right_column h1 span {width: 70%; font-family: "Amperzand"; float: left; 
-font-size: 20pt; margin-top: 1em; margin-left: .5em;}
+font-size: 1em; margin-top: .5em; margin-left: .5em;}
 #right_column h1 img {width: 20%; float: left;}
 #dream_truck {width: 50%;}
 
-#right_column a {color: #262626; text-decoration: underline; font-weight: 900;}
+#right_column a {color: white; text-decoration: underline; font-weight: 900;}

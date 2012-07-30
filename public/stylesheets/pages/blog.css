@@ -1,6 +1,10 @@
 @import url("/stylesheets/site_all.css");
 #explanation {position: relative; float: left; width: 100%}
-#explanation img {width: 20%; float: left;}
+img#exp-logo {width: 20%; float: left;}
 #explanation p {width: 75%; margin-left: 2%; float: left;}
-.tumblr_title {font-size: 18pt; color: white; font-weight: 800; float: left;}
-#right_column a {color: #262626; text-decoration: underline; font-weight: 900;}
+.tumblr_title {font-size: 18pt; color: white; font-weight: 800; float: left;font-family: "Arabolic"}
+#right_column a {color: white; text-decoration: underline; font-weight: 900;}
+
+.tumblr_body {float:left; }
+li.tumblr_post {float:left; color: white; list-style: none; padding-right: 4%; float: left;  }
+li.tumblr_post p {float: left; width: 85%; padding-right: 5%;}

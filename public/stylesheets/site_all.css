@@ -2,30 +2,36 @@ body {background-color:  #57b6dd;}
 
 @font-face {
   font-family: "Amperzand";
-  src: url(/fonts/Amperzand.ttf) 
-	format("truetype");
+	src: url(/stylesheets/fonts/Amperzand.eot);
+	src: local('Amperzand'),
+  	url(/stylesheets/fonts/Amperzand.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Jura-regular";
-  src: url(/fonts/Jura-Regular.ttf) 
+  src: url(/stylesheets/fonts/Jura-Regular.ttf) 
 	format("truetype");
 }
 @font-face {
   font-family: "Jura-bold";
-  src: url(/fonts/Jura-bold.ttf) 
+  src: url(/stylesheets/fonts/Jura-bold.ttf) 
 	format("truetype");
 }
 
 @font-face {
   font-family: "Arabolic";
-  src: url(/fonts/Arabolic.ttf) 
+  src: url(/stylesheets/fonts/classic-round-medium.eot);
+  src: local('Arabolic'),
+  url(/stylesheets/fonts/Arabolic.ttf) 
 	format("truetype");
 }
 @font-face {
   font-family: "Classic-Round";
-  src: url(/fonts/classic-round-medium.otf) 
-	format("truetype");
+  src: url(/stylesheets/fonts/classic-round-medium.eot);
+ local: url('classic-round-medium'),
+  url(/stylesheets/fonts/classic-round-medium.otf);
 }
+#right_column a:hover {color: #57b6dd}
 img {border-style: solid; border-width: .1em;  border-color: #262626; }
 p, form, span, h1, h2, h3, ul, ol, li {font-family: "Classic-Round", sans-serif; font-size: 1.4em, }
 
@@ -79,13 +85,13 @@ li#contact_link {border-right: none;}
 #twitter_explanation {width: 75%; margin-left: 0; font-family: "Classic-Round"}
 #twitter_explanation a {color: white; text-decoration: underline;}
 #twtr-widget-1 {margin-top: .4em;}
-#left_column a {border: none;; padding: none; }
+#left_column a {border: none;; padding: none; color: white; }
 #left_column a img  {border: none;}
 
 #footer {float: left; width: 100%; margin: 0 auto; float: left; margin-left: 10%; width: 75%; margin-top: .3em; 	
 	position: relative; padding-bottom: 1.5em;}
 
-#footer li {width: 19%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .8em;}
+#footer li {width: 19%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .75em; padding: 0; margin: 0;}
 li#email {width: 24%;}
 li#blog {width: 23%;}
 li#cell {width: 13%;}

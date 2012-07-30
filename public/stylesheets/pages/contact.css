@@ -4,12 +4,12 @@
 #header img {width: 100%; float: left; margin-top: 1em;}
 #general {float: left; width: 73%; margin-left: 2%;}
 
-.media{float: left; width: 21%; padding: .1em; color: white; font-size: 1.2em}
+.media{float: left; width: 21%; padding: .1em; color: white; font-size: 1.15em}
 .value {float: left; width: 74%; color: white;}
 
 .wrapper {float: left; width: 100%; margin-top: .4em}
 .wrapper a {color: white; text-decoration: underline;}
-span.value {font-size: 1.4em;}
+span.value {font-size: 1.3em;}
 
 
 
@@ -23,7 +23,7 @@ p#first {float: left; width: 50%; }
 img#cell {float: left; width: 30%;}
 
 h2#text-title {font-size: 2em; width: 30%}
-a.signup_button_round {color: #262626 ; font-weight: 900;}
+a.signup_button_round {color: white; font-weight: 900;}
 .success {font-family: "arabolic"; font-size: 1.9em; float: left; width: 100%; color: white;}
 
-#crystal img {float: left; }
+#crystal img {float: left; margin-left: 15%}
