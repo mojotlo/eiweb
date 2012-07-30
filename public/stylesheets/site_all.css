@@ -20,7 +20,7 @@ body {background-color:  #57b6dd;}
 
 @font-face {
   font-family: "Arabolic";
-  src: url(/stylesheets/fonts/classic-round-medium.eot);
+  src: url(/stylesheets/fonts/Arabolic.eot);
   src: local('Arabolic'),
   url(/stylesheets/fonts/Arabolic.ttf) 
 	format("truetype");
