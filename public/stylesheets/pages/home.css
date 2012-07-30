@@ -27,9 +27,9 @@ opaciity:  0.0;
     z-index:9;}
 #slideshow img {float: left; width: 21.7em; height: 14.7em;}
 
-#news {float: left; width: 100%}
+#news {float: left; width: 100%; padding-top: .4em;}
 #news_left {float: left; width: 25%; }
-#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif;}
+#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif; padding: 0; margin: 0;}
 #news_right {float: left; width: 70%; margin-left: 3%; position: relative; }
 a.news-item {float: left; width: 100%; margin-bottom: .4em; position: relative;}
 .news-item img {width: 13%; float: left;}
