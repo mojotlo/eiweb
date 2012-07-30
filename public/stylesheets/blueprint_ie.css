@@ -13,9 +13,10 @@
 
 /*override of site all's size to create more room for everything*/
 
-#central_container {width: 80%; margin: 0 auto;}
+#central_container {width: 80%; }
 #contact_logo {width: 90%;}
-#nav li {width: 15%}
+
+#nav li {width: 16%}
 
 /* ie.css */
 
