@@ -85,7 +85,7 @@ li#contact_link {border-right: none;}
 #footer {float: left; width: 100%; margin: 0 auto; float: left; margin-left: 10%; width: 75%; margin-top: .3em; 	
 	position: relative; padding-bottom: 1.5em;}
 
-#footer li {width: 19%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: 1em;}
+#footer li {width: 19%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .8em;}
 li#email {width: 24%;}
 li#blog {width: 23%;}
 li#cell {width: 13%;}
