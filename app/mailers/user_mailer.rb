@@ -2,7 +2,8 @@ class UserMailer < ActionMailer::Base
   default :from => "empanada.intifada@gmail.com"
   def registration_confirmation(user)
     @user=user
-    mail(:to  => user.email, :subject  => "Welcome Empanad-ero!")
+    @subject = "Welcome Empanad-ero"
+    mail(:to  => user.email, :subject  => @subject)
   end
   def registration_list
     @user=User.last
