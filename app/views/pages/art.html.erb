@@ -1,0 +1,37 @@
+<%= render :partial => "shared/nav_bar"%>
+<div id="central_container">
+<div id="central_content">
+	
+	<div id="left_column">
+	<%= render :partial => "shared/left_column"%>
+	</div>
+	
+	<div id="right_column">
+		
+		<h1> Calling All Artists and Designers </h1>
+<h3>Announcing the Empanada Intifada "This is Not a Food Truck" Moving Mural Contest </h3>
+
+<p>Many of you have noticed that while the Empanada Intifada regularly pops up, and even occasionally pops and locks, only one side of our fair 1981 Grumman truly "pops."  It's time that the other three sides live up to the awesome food coming from inside.  In the spirit of this election season, we decided to pass the artistic direction of the truck off to you, our community.</p>
+
+<p> 
+	So here's the 'tails.
+	<ul>
+		<li>Download and print these outlines of the sad, sterile aluminum walls of the truck, or come by the truck to pick one up</li>
+		<div id="download"> 
+			<%= link_to image_tag(  "/images/this-is-not-a-food-truck-blank-flyer2.jpg", :id => "flyer"), action: :flyer_download,  filename: "images/this-is-not-a-food-truck-blank-flyer2.jpg" %>			
+			<%= link_to "click here to download", {:action => :flyer_download,  :filename => "images/this-is-not-a-food-truck-blank-flyer2.jpg"}, :id => "hard_link",  %>
+			
+		</div>
+		<li>Style them with paint, or if you are digitally inclined, with your AdobePhotoShopPad (but only digital designs you are able and willing to recreate in the non-digital world) </li>
+		<li>Submit an image of the finished product, along with the cost, including supplies, and your contact info to empanada.intifada@gmail.com or bring it by the truck.  Feel free to bat around ideas via email too.  Also, links or pics of other works of yours that might be </li>
+</ul>
+<p>Finalists will be announced in the last week of October, and we will invite our twitter followers, facebook page-likers and real-world customers to vote on them up to and including Election Day 2012.</p>
+
+<h3>What's in it for you?</h3>
+<p> In addition to normal payment, finalists will receive so much free publicity that Kim Kardashian will fire her publicist for incompetence.  In the lead up to the vote, we'll be working the twittersphere incessantly, and will happily include links to all finalists' portfolios and websites.  All finalists will also receive a punch card for 10 free Platos at the Empanada Intifada.  And of course, the winner will be able to sign their art and have a mobile billboard hurtling through town.</p>
+
+<p>
+	</div>
+	</div>
+	</div>
+		<%= render :partial => "shared/footer" %>

@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   resources :users
   map.home '/', :controller => 'pages', :action => 'home'
   map.contact '/contact', :controller => 'pages', :action => 'contact'
+  map.art '/art', :controller => 'pages', :action => 'art'
   map.about '/about', :controller => 'pages', :action => 'about'
   map.menu '/menu', :controller => 'pages', :action => 'menu' 
   map.blog '/blog', :controller => 'pages', :action => 'blog' 
