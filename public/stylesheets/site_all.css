@@ -73,8 +73,7 @@ li#contact_link {border-right: none;}
 #nav a {color: white;}
 #nav a:hover {color: #57b6dd;}
 #header {float: left; width: 56%; position: relative; color: black;}
-#header img  {float:left; width: 100%; 
-	margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
+#header img  {float:left; width: 100%; margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
 #header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
 	position: relative;}
 
