@@ -41,7 +41,7 @@ text-align: center; float: left; }
 	 font-family: "Amperzand", sans-serif; font-size: 30pt; 
 		margin-top: .5em;}
 		
-#nav { float: left; width: 76.5%; margin-left: 10%; 		
+#nav { float: left; width: 91.5%; margin-left: 4%; 		
 	margin-bottom: .2em;	
 	font-size: 20pt; color: white; background: black; margin-top: 0;
  	list-style-type: none; padding: 0; 
@@ -49,10 +49,10 @@ text-align: center; float: left; }
 	-webkit-border-radius: 8px; 
 	-moz-border-radius: 8px;
 	}
-#special_news { float: left; width: 76.5%; margin-left: 10%; 		
-		margin-bottom: .2em;	
+#special_news { float: left; width: 90.5%; margin-left: 4%; 		
+		margin-bottom: .2em; padding: .3em;
 		font-size: 14pt; color: white; background: black; margin-top: 0;
-	 	list-style-type: none; padding: 0; 
+	 	list-style-type: none;
 		border-style: solid; border-width: 5px;  border-color: #262626; 
 		-webkit-border-radius: 8px; 
 		-moz-border-radius: 8px;
@@ -80,7 +80,7 @@ li#contact_link {border-right: none;}
 
 #email {font-weight: 900;}
 
-#central_container {margin: 0 auto; float: left; margin-left: 10%; width: 75%; 	
+#central_container {margin: 0 auto; float: left; margin-left: 4%; width: 90%; 	
 	position: relative; background-color: black; 
 	border-style: solid; border-width: 15px;  border-color: black; 
 	-webkit-border-radius: 8px; 
@@ -90,9 +90,9 @@ li#contact_link {border-right: none;}
 #facebook_like {width: 225px; border: solid .3em white;}
 #central_container p {font-size: 14pt; color: white; font-family: "Classic-Round", arial; position: relative}	
 
-#right_column {width: 57%; margin-left: 3%; position: relative; float: left;}
+#right_column {width: 60%; margin-left: 3%; position: relative; float: left;}
 
-#left_column {width: 35%; min-height: 48em; position: relative; float: left; background: none repeat scroll 0% 0% rgb(38, 38, 38); padding-left: 5%; margin: 0px;}
+#left_column {width: 32%; min-height: 48em; position: relative; float: left; background: none repeat scroll 0% 0% rgb(38, 38, 38); padding-left: 2%; margin: 0px;}
 #left_column p {font-size: 10pt;}
 #left_column iframe {background: #57b6dd;}
 #twitter_explanation {width: 75%; margin-left: 0; font-family: "Classic-Round"}
@@ -101,10 +101,10 @@ li#contact_link {border-right: none;}
 #left_column a {border: none;; padding: none; color: white; }
 #left_column a img  {border: none;}
 
-#footer {float: left; width: 100%; margin: 0 auto; float: left; margin-left: 10%; width: 75%; margin-top: .3em; 	
+#footer {float: left; margin: 0 auto; float: left; margin-left: 1%; width: 99%; margin-top: .3em; 	
 	position: relative; padding-bottom: 1.5em;}
 
-#footer li {width: 19%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .75em; padding: 0; margin: 0;}
+#footer li {width: 20%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .75em; padding: 0; margin: 0;}
 li#email {width: 24%;}
 li#blog {width: 23%;}
 li#cell {width: 13%;}

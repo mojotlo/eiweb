@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about '/about', :controller => 'pages', :action => 'about'
   map.menu '/menu', :controller => 'pages', :action => 'menu' 
   map.blog '/blog', :controller => 'pages', :action => 'blog' 
+  map.catering '/catering', :controller => 'pages', :action => 'catering' 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
