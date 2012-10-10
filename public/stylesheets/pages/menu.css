@@ -2,6 +2,6 @@
 
 #left_column {width: 27%; padding-left: .6em}
 #right_column {margin-left: .2em;; padding:0;}
-#right_column img {margin: auto; float: left; margin-top: .3em; width: 125%;}
+#right_column img {margin: 0 auto; float: left; margin-top: .3em; width: 100%; margin-left: 10%;}
 #right_column  h2 {font-family: "Arabolic"; float: left; width: 100%;  font-size: 2em;}
 #right_column a {color: white;}

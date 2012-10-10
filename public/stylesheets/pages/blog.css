@@ -1,10 +1,12 @@
 @import url("/stylesheets/site_all.css");
-#explanation {position: relative; float: left; width: 100%}
+#explanation {position: relative; float: left; width: 100%; }
 img#exp-logo {width: 20%; float: left;}
 #explanation p {width: 75%; margin-left: 2%; float: left;}
-.tumblr_title {font-size: 18pt; color: white; font-weight: 800; float: left;font-family: "Arabolic"}
+.tumblr_title {font-size: 18pt; color: white; font-weight: 800; float: left;font-family: "Arabolic"; width: 98%; border: dotted white .1em; padding: 1%; margin-top: .5em;}
 #right_column a {color: white; text-decoration: underline; font-weight: 900;}
 
-.tumblr_body {float:left; }
+
+.tumblr_body {float:left;}
 li.tumblr_post {float:left; color: white; list-style: none; padding-right: 4%; float: left;  }
-li.tumblr_post p {float: left; width: 85%; padding-right: 5%;}
+li.tumblr_post p {float: left; width: 95%; padding-right: 5%;}
+li.tumblr_post img {margin-top: .5em;}

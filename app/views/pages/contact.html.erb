@@ -16,12 +16,7 @@
 
 
 	<%= render :partial => "shared/contact_header"%>
-<div id="party">
-<a href="/catering"><h2>Catering and Private Parties</h2></a>
 
-<p id="first">  The Empanada Intifada loves adding flavor to festive occasions. New Orleans' first Solar-Electric food truck lets guests enjoy a gourmet meal without having to talk over a generator or engine.  We've been there for birthday parties, work meetings, film shoots, engagement parties, rehearsals, fundraisers, soirees, shindigs, and the occasional hootenanny.</p> <img src='/images/empanada-party.jpg' alt="party"/>
-<p>Contact us for details: empanada.intifada@gmail.com or (504) 684-5358</p>
-</div>
 <h2><a name="textmark">	<%=link_to "Where is the Empanada Intifada?" , new_user_path, :class => "signup_button_round"%> </a></h2>
 <div id="texts">
 
@@ -36,11 +31,16 @@
 
 </div>
 <a name="emailmark"><h2>The Lost Art of Receiving Emails</h2></a>
-<p>Perhaps in this day and age of texts, push alerts, micro-tweeting mini-haikus, you just want to relax, let your hair down, and hear about our plans, aspirations, perspirations, and more in long form via email (~1 email per week).  We do that too!
+<p>Perhaps in this day and age of texts, push alerts, and micro-tweeting haiku status updates, you just want to relax, let your hair down, and hear about our plans, aspirations, perspirations, and more in long form via email (~1 email per week).  We do that too!
 	<%=link_to "Sign up!" , new_user_path, :class => "signup_button_round"%>
 	</p>
 </div>
+<div id="party">
+<a href="/catering"><h2>Catering and Private Parties</h2></a>
 
+<p>  Check out our <a href="/catering">catering info</a>, or <img src='/images/empanada-party.jpg' alt="party"/>
+contact us for details: empanada.intifada@gmail.com or (504) 684-5358</p>
+</div>
 </div>
 </div>
 	<%= render :partial => "shared/footer" %>
