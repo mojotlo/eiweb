@@ -1,7 +1,37 @@
 @import url("/stylesheets/site_all.css");
-
-#left_column {width: 27%; padding-left: .6em}
-#right_column {margin-left: .2em;; padding:0;}
-#right_column img {margin: 0 auto; float: left; margin-top: .3em; width: 100%; margin-left: 10%;}
-#right_column  h2 {font-family: "Arabolic"; float: left; width: 100%;  font-size: 2em;}
+li#menu {background: url("/images/empanada-logo-background-only.png");}
+li#menu a:hover {color: black;}
+#central_container {min-width: 900px; padding: 0%;}
+#nav {min-width: 900px;}
+#left_column {width: 28%;}
+#right_column img {float: left; margin-top: .3em; width: 40em;}
 #right_column a {color: white;}
+
+#menu_container {margin-top: .5em; float: left; width: 100%; background: black; }
+
+#menu_container p, #menu_container h1, #menu_container h2 {float: left; } 
+#watermark {padding: 1em; background: url("/images/menu-background.png"); float: left; margin: 1.5em; }
+
+#menu_top {float: left; width: 100%; }
+#menu_top h1 {margin: 0 auto; text-align: center; width: 80%;}
+#menu_description {float: left; margin: .5em 0;}
+#menu_description span {width: 100%; float: left; font-family: "amperzand"; font-size: 12pt; color: #e0e0e0;}
+#menu_container img {width: 7.9%;}
+
+#fillings {float: left; width: 47%; margin-right: 5%;}
+#sides_accompaniments {float: left; width: 47%;}
+
+#menu_container h1 {font-family: "arabolic"; float: left; font-size: 14pt; 
+margin: .5em .5em ; width: 80%; color: white;}
+
+#menu_container h2 {font-family: "Rockwell-extra-bold"; float: left; font-size: 13pt; font-weight: 400; color: white;}
+
+span.item_description {float: left; width: 100%; padding: 0; font-size: 10pt; color: #efefef;}
+
+#menu_top {width: 100%; position: relative; float: left; }
+
+.left_corner {float: left;}
+.right_corner {float: right; }
+
+#menu_bottom h1 {float: left; font-size: 1em; width: 100%;}
+h1#subscribe {float: left; width: 80%;}

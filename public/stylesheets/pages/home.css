@@ -1,9 +1,11 @@
 @import url("/stylesheets/site_all.css");
+li#home {background: url("/images/empanada-logo-background-only.png");}
+li#home a:hover {color: black;}
 
 #header img {width: 105%; margin-left:5%;
 				border: solid .5em black; float: left; margin-bottom: .5em;}
 				
-#photo_border {border: solid .6em #57b6dd; position: relative; float: left; width: 21.25em; -moz-border-radius: 12px;
+#photo_border {border: solid .6em #57b6dd; position: relative; float: left; width: 19.35em; -moz-border-radius: 12px;
 	margin: auto; margin-top: .3em;}
 
 
@@ -25,16 +27,18 @@ opaciity:  0.0;
 
 #slideshow DIV.last-active {
     z-index:9;}
-#slideshow img {float: left; width: 21.05em; height: 14.05em;}
+#slideshow img {float: left; width: 19.25em; height: 14.05em;}
 
-#news { float: left; width: 44%; padding-top: .4em; position: relative;}
-#news_title {float: left; width: 100%; margin-bottom: .5em; }
-#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif; padding: 0; margin: 0; padding-left: .3em; }
+#news { float: left; width: 100%; padding-top: .4em; position: relative;
+	}
+#news_title {float: left; width: 100%; margin-bottom: .5em;
+ }
+#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif; padding: 0; margin: 0; padding-left: .3em; margin-bottom: .5em; }
 #news_items {float: left; width: 100%; margin-left: 3%; position: relative; }
-a.news-item {float: left; width: 100%; margin-bottom: .4em; position: relative;}
-.news-item img {width: 23%; float: left;}
+a.news-item {float: left; width: 100%; margin-bottom: 1em; position: relative;}
+.news-item img {width: 13%; float: left;}
 .news-item { color: white; font-weight: 700; ;}
-.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 1.1em; width: 70%; float: left;}
+.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 1.3em; width: 40%; float: left;}
 #details {widith: 1.5em;em;}
 
 #right_column h2 {font-family: "arabolic"; font-size: 2em; width: 100%; float: left; color: white;}

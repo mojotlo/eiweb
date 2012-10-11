@@ -1,14 +1,8 @@
 @import url("/stylesheets/site_all.css");
 
-#header {width: 25%;}
-#header img {width: 100%; float: left; margin-top: 1em;}
-#general {float: left; width: 73%; margin-left: 2%;}
 
-.media{float: left; width: 21%; padding: .1em; color: white; font-size: 1.15em}
-
-.wrapper {float: left; width: 100%; margin-top: .4em}
-.wrapper a {color: white; text-decoration: underline;}
-span.value {font-size: 1.3em; float: left; width: 74%; color: white;}
+li#catering {background: url("/images/empanada-logo-background-only.png");}
+li#catering a:hover {color: black;}
 
 
 

@@ -1,4 +1,6 @@
 @import url("/stylesheets/site_all.css");
+li#follow {background: url("/images/empanada-logo-background-only.png");}
+li#follow a:hover {color: black;}
 
 #header {width: 25%;}
 #header img {width: 100%; float: left; margin-top: 1em;}

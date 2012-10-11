@@ -1,4 +1,7 @@
 @import url("/stylesheets/site_all.css");
+li#blog_nav {background: url("/images/empanada-logo-background-only.png");}
+li#blog_nav a:hover {color: black;}
+
 #explanation {position: relative; float: left; width: 100%; }
 img#exp-logo {width: 20%; float: left;}
 #explanation p {width: 75%; margin-left: 2%; float: left;}

@@ -1,8 +1,10 @@
 @import url("/stylesheets/site_all.css");
 
+li#about {background: url("/images/empanada-logo-background-only.png");}
+li#about a:hover {color: black;}
 
 #right_column h1 { float: left; width: 100%;}
-#right_column h1 span {width: 70%; font-family: "Amperzand"; float: left; 
+#right_column h1 span {width: 70%;  font-weight: 400; color: white; font-family: "Amperzand"; float: left; 
 font-size: 1em; margin-top: .5em; margin-left: .5em;}
 #right_column h1 img {width: 20%; float: left;}
 #dream_truck {width: 50%;}
