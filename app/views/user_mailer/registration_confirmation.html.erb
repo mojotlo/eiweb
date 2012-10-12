@@ -1,74 +1,73 @@
-<div style="border: #e0e0e0 solid .2em; width: 95%; float: left; position: relative; padding: 2.5%;">
+<div style="border: #e0e0e0 solid .2em; width: 95%; float: left; position: relative; padding: 2.5%; font-size: 1.3em;">
 	<img src="http://www.empanadaintifada.com/images/street-eats-logo.png"/ style="width: 100%; float: left; min-width: 200px;">
 <p>Howdy <%= @user.name.split[0] %>,</p>
 <p>Welcome to the Empanada Intifada's "Street Eats Beat." The Empanada is mystery wrapped in a flaky crust. Hopefully we can help you unwrap it. </p>
 
-<p>From henceforth, we will try to ensure that a letter comes to your inbox once a week.  Sometimes it will be a pre-cap of our weekly plan.  Sometimes we will have information about interesting things other trucks and pop-ups are doing.  Sometimes it will be long, sometimes short.  Sometimes we will forget to write it.  
+<p>From henceforth, we will try to ensure that a letter comes to your inbox around once a week.  Sometimes it will be a pre-cap of our weekly plan.  Sometimes we will have information about interesting things other trucks and pop-ups are doing.  Sometimes it will be long, sometimes short.  Sometimes we will forget to write it.  
 </p>
 
 <p>
 We're interested in getting to know you, our regular empanada eaters.  If you have concerns, comments, compliments, or cool stories, we want to hear them.  We're still learning as we go - help us become the best spot(s) to eat in New Orleans by giving us a little feedback every once in a while.  Email empanada.intifada@gmail.com anytime you like.
 </p>
 
+<section style="border: #e0e0e0 solid .5em; width: 85%; float: left; position: relative; padding: 2.5%;">
 <p>
 A few more resources: </p>
 
 <p>
-If you want even faster alerts, sign up for one of our text message alert groups:
-<div class="text_instruction_wrapper">
-	<span class="keyword">text FANATIC to (504)684-5358  </span> 
+If you want even faster alerts, sign up for one of our text message alert groups:</p>
+<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text FANATIC to (504)684-5358  </span> 
 
-	<span class="explanation">(Get every movement of the Empanada Intifada)</span>
+	<span style=<%= render :partial => "text_css_explanation" %>>(Get every movement of the Empanada Intifada)</span>
 	</div>
-	<div class="text_instruction_wrapper">
+	<div style= <%= render :partial  => "text_css"%>>
 		
-	<span class="keyword">text DAILY to (504)684-5358 </span>
-	<span class="explanation"> (Get a daily digest text with the general outlines of our plan each morning).  </span>
+	<span style=<%= render :partial => "text_css_keyword" %>>text DAILY to (504)684-5358 </span>
+	<span style=<%= render :partial => "text_css_explanation" %>> (Get a daily digest text with the general outlines of our plan each morning).  </span>
 	</div>
-	<div class="text_instruction_wrapper">
+	<div style= <%= render :partial  => "text_css"%>>
 				
-	<span class="keyword">text TULANE to (504)684-5358 </span><span class="explanation">(Uptown near Tulane and Loyola campuses)</span>
+	<span style=<%= render :partial => "text_css_keyword" %>>text TULANE to (504)684-5358 </span><span style=<%= render :partial => "text_css_explanation" %>>(Uptown near Tulane and Loyola campuses)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">		
-	<span class="keyword">text BROAD to (504)684-5358  </span><span class="explanation">(Broad St between Canal and Poydras)</span>
+	<div style= <%= render :partial  => "text_css"%>>		
+	<span style=<%= render :partial => "text_css_keyword" %>>text BROAD to (504)684-5358  </span><span style=<%= render :partial => "text_css_explanation" %>>(Broad St between Canal and Poydras)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">
-	<span class="keyword">text UPTOWN to (504)684-5358 </span> <span class="explanation"> (Uptown watering holes and lunch spots)</span>
+	<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text UPTOWN to (504)684-5358 </span> <span style=<%= render :partial => "text_css_explanation" %>> (Uptown watering holes and lunch spots)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">
-	<span class="keyword">text CBD to (504)684-5358 </span><span class="explanation">(the outskirts of the CBD - either Claiborne Ave near hospitals or Howard Ave)</span>
+	<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text CBD to (504)684-5358 </span><span style=<%= render :partial => "text_css_explanation" %>>(the outskirts of the CBD - either Claiborne Ave near hospitals or Howard Ave)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">
-	<span class="keyword">text GARDEN to (504)684-5358  </span> <span class="explanation">(the Garden District and Central City)</span>
+	<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text GARDEN to (504)684-5358  </span> <span style=<%= render :partial => "text_css_explanation" %>>(the Garden District and Central City)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">
-	<span class="keyword">text FRENCHMEN to (504)684-5358  </span> <span class="explanation">(Frenchmen, late night and maybe lunch)</span>
+	<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text FRENCHMEN to (504)684-5358  </span> <span style=<%= render :partial => "text_css_explanation" %>>(Frenchmen, late night and maybe lunch)</span>
 	</div>
 	
-	<div class="text_instruction_wrapper">
-	<span class="keyword">text BYWATER to (504)684-5358 </span><span class="explanation">	(The rest of the Marigny/Bywater)</span>
+	<div style= <%= render :partial  => "text_css"%>>
+	<span style=<%= render :partial => "text_css_keyword" %>>text BYWATER to (504)684-5358 </span><span style=<%= render :partial => "text_css_explanation" %>>	(The rest of the Marigny/Bywater)</span>
 	</div>
 
+
+<p style="margin-top: .3em; margin-bottom: .3em;">
+Also, be sure to check out our blog, where we wax philosophical and write odes to food: www.empanadaintifada.tumblr.com</p>
+
+<p style="margin-top: .3em; margin-bottom: .3em;">our twitter, where we are succinct:  @empanadaintifad</p>
+
+<p style="margin-top: .3em; margin-bottom: .3em;">and our facebook, where we spend too much time: www.facebook.com/empanadaintifada</p>
+
+<p style="margin-top: .3em; margin-bottom: .3em;">As always, please share the empanada love by forwarding this and any other of our emails widely and broadly.</p>
+
+</section>
+<%= render :partial  => "signoff" %> 
 </div>
 
-<p>
-and the blog: empanadaintifada.tumblr.com
-and the twitter:  @empanadaintifad
-and the facebook: facebook.com/empanadaintifada
-</p>
-
-<p>
-Talk to you soon!
-</p>
-
-<p>
-Taylor and the rest of the Empanada Intifada
-</p>
-
-<p>
-reply with subject line 'UNSUBSCRIBE' to unsubscribe.  Reply with any other subject line to talk to us in a less robotic kind of way.</p>
+<%= render :partial  => "email_subscribe_footer" %> 
+<%= render :partial  => "email_contact_info" %> 
