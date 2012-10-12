@@ -34,9 +34,9 @@ body {background-color:  #57b6dd;}
 }
 @font-face {
   font-family: "Classic-Round";
-  src: url(/stylesheets/fonts/classic-round-medium.eot);
- local: url('classic-round-medium'),
-  url(/stylesheets/fonts/classic-round-medium.otf);
+  src: url(/stylesheets/fonts/classicround-medium.eot);
+ local: url('classicround-medium'),
+  url(/stylesheets/fonts/classicround-medium.otf);
 }
 
 a {color: white; text-decoration: underline;}
