@@ -1,7 +1,10 @@
 @import url("/stylesheets/site_all.css");
 
 #right_column {margin-left: 0;}
-div.event_container {background: #262626; float: left; width: 100%; position: relative; border: solid #333 .1em; margin-left: 0; padding-top: .2em;}
+#right_column .title {font-family: "arabolic"; font-size: 1.5em; font-weight: 500; color: white; margin-left: 5%; margin-bottom: 0;}
+
+#right_column .twitter_caveat {float: left; margin-left: 5%;}
+div.event_container {background: #262626; float: left; width: 100%; position: relative; border: solid #333 .1em; margin-left: 2.5%; padding-top: .2em;}
 .date_container {float: left; width: 30%;  position: relative; padding: 1%;}
 
 

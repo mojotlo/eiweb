@@ -8,8 +8,8 @@
 	<div id="right_column">
 
 <div id="events">
-
-<ul>
+<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
+<h3 class="twitter_caveat"><-- Check twitter feed for updates and details</h3>
 
 <% @events=Event.find(:all, :order => :date) %> 
 <% unless defined? (old_date) 
@@ -79,5 +79,5 @@ end %>
 
 
 <% end %>
-</ul
+
 </div>
