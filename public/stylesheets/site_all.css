@@ -59,6 +59,17 @@ text-align: center; float: left; }
 	-webkit-border-radius: 8px; 
 	-moz-border-radius: 8px;
 	}
+	
+	#nav a {font-family: "Amperzand"; list-style-top: none;}
+	#nav li {margin-bottom: .4em; color: white; float: left; width: 12.3%;
+		text-align: center;
+		padding-top: .2em;
+		border-right: solid .1em #262626;}
+	li#contact_link {border-right: none;}
+	#nav a {color: white;}
+	#nav a:hover {color: #57b6dd;}
+	
+	
 #special_news { float: left; width: 90.5%; margin-left: 4%; 		
 		margin-bottom: .2em; padding: .5em;
 		font-size: 11pt; color: white; background: black; margin-top: 0;
@@ -73,14 +84,7 @@ text-align: center; float: left; }
 #special_news h1 {font-family: "Rockwell-extra-bold", sans-serif; font-size: 14pt; font-weight: 400; padding: 0; float: left;margin: .1em;}
 #special_news p {float: left; padding: 0; margin: .1em;}		
 #special_news a {color: white;}
-#nav a {font-family: "Amperzand"; list-style-top: none;}
-#nav li {margin-bottom: .4em; color: white; float: left; width: 14%;
-	text-align: center;
-	padding-top: .2em;
-	border-right: solid .1em #262626;}
-li#contact_link {border-right: none;}
-#nav a {color: white;}
-#nav a:hover {color: #57b6dd;}
+
 #header {float: left; width: 56%; position: relative; color: black;}
 #header img  {float:left; width: 100%; margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
 #header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
