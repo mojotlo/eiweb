@@ -10,4 +10,8 @@ class UserMailer < ActionMailer::Base
     @recent_users=User.last(10).reverse
     mail(:to  => "empanada.intifada@gmail.com", :cc => "tsjackson@gmail.com", subject  => "We got a live one:  update the list!")
   end
+  def weekly_email
+    @email=Email.last
+    mail(:to  => "empanada.intifada@gmail.com", :cc => "tsjackson@gmail.com", subject  => "Weekly email sent!")
+  end
 end

@@ -1,0 +1,25 @@
+@import url("/stylesheets/site_all.css");
+
+#right_column {margin-left: 0;}
+div.event_container {background: #262626; float: left; width: 100%; position: relative; border: solid #333 .1em; margin-left: 0; padding-top: .2em;}
+.date_container {float: left; width: 30%;  position: relative; padding: 1%;}
+
+
+.event_day {color: white; float: left; width: 70%; font-size: 2em; font-family: arabolical;}
+.date_subcontainer {color: black; float: left; width: 25%; position: relative; background: url("/images/empanada-logo_background_only.png"); padding: .2em .5em;;  border: white solid .2em; margin-left: .8em; margin-top:.5em;}
+.event_date {color: black; float: left; width: 100%; font-size: 1.6em;}
+.event_month {color: black; float: left; width: 100%; font-size: 1.4em;}
+
+
+
+.pending {color: yellow; float: left; width: 100%; margin-top:.9em; font-size: .8em;}
+
+.details_container {float: left; width: 43%; margin-top: .7em;}
+.event_name {color: white; float:left; width: 100%;  margin-top: 0; font-size: 1.2em; margin-top: .5em;}
+.event_time {color: white; float: left; width: 100%; font-size: 1.2em; margin-top: .5em;}
+
+#central_container p.event_details {color: white; float: left; width: 100%; font-size: 1em; padding: 0; margin: 0;}
+
+#right_column .fb-like { margin-left: 2.5%; width: 95%; margin-bottom: .5em; margin-top: .5em; padding: .2em;}
+
+.time_like_container {float: left; width: 25%; position: relative;}

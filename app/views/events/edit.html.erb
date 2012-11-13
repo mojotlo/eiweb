@@ -1,0 +1,55 @@
+<%= render :partial => "shared/nav_bar"%>
+<div id="central_container">
+
+
+	<div id="left_column">
+	<%= render :partial => "shared/left_column"%>
+	</div>
+	<div id="right_column">
+<div id="edit event">
+
+<%=form_for (@event), :html  => {:multipart  => true }, :remote => true do |f| %>
+<%=render "shared/error_messages", :object  => f.object%>
+<div class="field">	
+	<%=f.label :name %>
+	<%=f.text_field :name %>
+</div>
+<div class="field">
+	<%=f.label :details %>
+	<%=f.text_field :details, %>
+</div>
+<div class="field">
+	<%=f.label :date %>
+	<%= f.datetime_select :date %>
+</div>
+<div class="field">
+	<%=f.label :Pending? %>
+	<%= f.check_box :pending, {} %>
+</div>
+<div class="field">
+	<%=f.label :password %>
+	<%= f.password_field :password %>
+</div>
+
+<div class="actions">
+	<%=f.submit "Edit event!" %>
+</div>
+<%end%>
+
+<H1>DELETE THIS EVENT:</h1>
+	<%=form_for (@event), :html  => {:method => :delete, :multipart  => true }, :remote => true do |f| %>
+	<%=render "shared/error_messages", :object  => f.object%>
+
+		<%=f.label :password %>
+		<%= f.password_field :password %>
+	</div>
+
+	<div class="actions">
+		<%=f.submit "Delete event!" %>
+	</div>
+<% end %>
+
+</div>
+<%= render :partial  => "shared/text_message_instructions" %> 
+	
+	

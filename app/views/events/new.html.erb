@@ -8,24 +8,33 @@
 	<div id="right_column">
 
 	<%= render :partial => "shared/contact_header"%>
-<div id="party">
+<div id="new_event">
 
-	
-<a name= "email-signup" ><h2><a name= "email-signup" >Sign up for EI emails</a></h2>
-<p>Get our email newsletter - <span id="newsletter_title"> The Street Eats Beat</span></p>
-<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
+<%=form_for (@event), :html  => {:multipart  => true }, :remote => true do |f| %>
 <%=render "shared/error_messages", :object  => f.object%>
 <div class="field">	
 	<%=f.label :name %>
 	<%=f.text_field :name, :placeholder => "Name"%>
 </div>
 <div class="field">
-	<%=f.label :email %>
-	<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+	<%=f.label :details %>
+	<%=f.text_field :details, :placeholder => "Describe the event"%>
+</div>
+<div class="field">
+	<%=f.label :date %>
+	<%= f.datetime_select :date %>
+</div>
+<div class="field">
+	<%=f.label :Pending? %>
+	<%= f.check_box :pending, {} %>
+</div>
+<div class="field">
+	<%=f.label :password %>
+	<%= f.password_field :password %>
 </div>
 
 <div class="actions">
-	<%=f.submit "Signup!" %>
+	<%=f.submit "New event!" %>
 </div>
 <%end%>
 

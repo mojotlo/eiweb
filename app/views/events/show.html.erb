@@ -1,0 +1,60 @@
+<%= render :partial => "shared/nav_bar"%>
+<div id="central_container">
+
+
+	<div id="left_column">
+	<%= render :partial => "shared/left_column"%>
+	</div>
+	<div id="right_column">
+
+<div id="events">
+	<div class="event_container">
+	<div class="date_container">
+
+
+
+		<span class="event_day">
+
+			<%= day_parse(@event.date.wday.to_s) %> 
+
+
+		</span>
+		<div class="date_subcontainer">
+		<span class="event_month">
+			<%= @event.date.strftime("%b") %> 
+		</span>
+		<span class="event_date">
+			<%= @event.date.strftime("%d") %> 
+		</span>
+
+
+		</div>
+
+
+	<% if @event.pending==true %>
+	<span class="pending">
+		(pending confirmation)
+	</span>
+
+	<% end %>
+	</div> 	
+
+	<div class="details_container">
+	<span class="event_time">
+		<%= @event.date.strftime("%l:%M%p") %> 
+
+	</span>
+
+	<h1 class="event_name">
+	<%= link_to "#{@event.name}",  event_path(@event) %> 
+	</h1>
+	<p class="event_details">
+		<%= @event.details %> 
+	</p>
+
+	</div>
+	<div class="fb-like" data-href="http://www.empanadaintifada.com/events/<%="#{@event.id}"%>" data-send="true" data-layout ="button_count" data-width="450" data-show-faces="true" data-action="recommend"  data-colorscheme="dark" data-font="verdana"></div>
+	</div>
+</div>
+</div>
+</div>

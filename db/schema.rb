@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120727012924) do
+ActiveRecord::Schema.define(:version => 20121112170027) do
 
   create_table "admin_contents", :force => true do |t|
     t.string   "map_file_name"
@@ -19,6 +19,26 @@ ActiveRecord::Schema.define(:version => 20120727012924) do
     t.date     "map_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "emails", :force => true do |t|
+    t.string   "content"
+    t.date     "SentDate"
+    t.boolean  "sent"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password"
+  end
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.time     "time"
+    t.datetime "date"
+    t.string   "details"
+    t.boolean  "pending"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password"
   end
 
   create_table "users", :force => true do |t|
