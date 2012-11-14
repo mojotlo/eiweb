@@ -8,10 +8,11 @@ class EventsController < ApplicationController
       @user_pass=@event.password
 
       if password_check(@user_pass)==true
+        @event.password=nil
         @event.save
         flash[:success] = "New Event Created!"
         redirect_to @event
-        @event.password=nil
+
       else
         render :new
       end

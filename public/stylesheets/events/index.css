@@ -19,7 +19,7 @@ div.event_container {background: #262626; float: left; width: 100%; position: re
 
 .details_container {float: left; width: 43%; margin-top: .7em;}
 .event_name {color: white; float:left; width: 100%;  margin-top: 0; font-size: 1.2em; margin-top: .5em;}
-.event_time {color: white; float: left; width: 100%; font-size: 1.2em; margin-top: .5em;}
+.event_time {color: white; float: left; width: 100%; font-size: 1.2em; margin-top: .5em; margin-left: .5em;}
 
 #central_container p.event_details {color: white; float: left; width: 100%; font-size: 1em; padding: 0; margin: 0;}
 

@@ -3,81 +3,92 @@
 
 
 	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
+		<%= render :partial => "shared/left_column"%>
 	</div>
+	
 	<div id="right_column">
 
-<div id="events">
-<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
-<h3 class="twitter_caveat"><-- Check twitter feed for updates and details</h3>
+		<div id="events">
+			<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
+			<h3 class="twitter_caveat">
+				<-- Check twitter feed for updates and details
+			</h3>
 
-<% @events=Event.find(:all, :order => :date) %> 
-<% unless defined? (old_date) 
- 	old_date=5.days.ago
-end %>
-<% @events.each do |event| %> 
+			<% @events=Event.find(:all, :order => :date) %> 
+			<% unless defined? (old_date) 
+			 	last_date=5.days.ago
+			end %>
+			<% @events.each do |event| %> 
  
-<% @event=event %>
- 
-	<% new_date=event.date %>
-
-<div class="event_container">
-<div class="date_container">
-	<% if new_date.strftime("%d") != old_date.strftime("%d")%>
+			<% @event=event %>
+			 <% if @event.date >= 32.hours.ago %>
 
 
-	<span class="event_day">
 
-		<%= day_parse(@event.date.wday.to_s) %> 
+			<div class="event_container">
+				<div class="date_container">
+					<% if event.date.strftime("%d") != last_date.strftime("%d")%>
+
+
+					<span class="event_day">
+
+						<%= day_parse(@event.date.wday.to_s) %> 
 		
 
-	</span>
-	<div class="date_subcontainer">
-	<span class="event_month">
-		<%= @event.date.strftime("%b") %> 
-	</span>
-	<span class="event_date">
-		<%= @event.date.strftime("%d") %> 
-	</span>
+					</span>
+					<div class="date_subcontainer">
+					<span class="event_month">
+						<%= @event.date.strftime("%b") %> 
+					</span>
+					<span class="event_date">
+						<%= @event.date.strftime("%d") %> 
+					</span>
 
 	
+					</div>
+
+
+				<% end %>
+
+				</div> 	
+
+				<div class="details_container">
+
+
+					<h1 class="event_name">
+					<%= link_to "#{@event.name}",  event_path(@event) %> 
+					</h1>
+					<p class="event_details">
+						<%= @event.details %> 
+					</p>
+						<% if @event.pending==true %>
+						<span class="pending">
+							(pending confirmation)
+						</span>
+
+						<% end %><!--end pending-->
+				</div>
+
+					<div class="time_like_container">
+				<span class="event_time">
+					<%= @event.date.strftime("%l:%M%p") %> 			
+				</span>	
+					<div class="fb-like" data-href="http://www.empanadaintifada.com/events/<%="#{event.id}"%>" data-send="true" data-layout ="box_count" data-width="450" data-show-faces="true" data-action="recommend"  data-colorscheme="dark" data-font="verdana">
+					</div>
+
+				</div>
+			</div>	
+			<% last_date=event.date%> 
+
+			<% end %><!--end if event is later than today-->
+
+
+			<% end %><!--end for block-->
+		
+
 	</div>
-
-
-<% end %>
-
-</div> 	
-
-<div class="details_container">
-
-
-<h1 class="event_name">
-<%= link_to "#{@event.name}",  event_path(@event) %> 
-</h1>
-<p class="event_details">
-	<%= @event.details %> 
-</p>
-<% if @event.pending==true %>
-<span class="pending">
-	(pending confirmation)
-</span>
-
-<% end %>
-</div>
-<div class="time_like_container">
-<span class="event_time">
-	<%= @event.date.strftime("%l:%M%p") %> 
-	<div class="fb-like" data-href="http://www.empanadaintifada.com/events/<%="#{event.id}"%>" data-send="true" data-layout ="box_count" data-width="450" data-show-faces="true" data-action="recommend"  data-colorscheme="dark" data-font="verdana"></div>
-	</div>	
-</span>
-
-
-<% old_date=new_date%> 
-
+	
+	
 
 </div>
 
-
-<% end %>
-
-</div>
