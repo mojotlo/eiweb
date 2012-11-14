@@ -6,7 +6,7 @@ class EmailsController < ApplicationController
   def create
     @email=Email.new(params[:email])
     if @email.save    
-      UserMailer.weekly_email.deliver
+      #UserMailer.weekly_email.deliver
       flash[:success] = "Preview your email"
        redirect_to @email
     else 
