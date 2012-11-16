@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   resources :users
   resources :emails
   resources :events
+  map.follow "/follow", :controller  => "users",  :action  => :new
   map.home '/', :controller => 'pages', :action => 'home'
   map.contact '/contact', :controller => 'pages', :action => 'contact'
   map.art '/art', :controller => 'pages', :action => 'art'
