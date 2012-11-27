@@ -1,22 +1,22 @@
-ActionController::Routing::Routes.draw do |map|
-
+Eiweb::Application.routes.draw do
   resources :users
   resources :emails
   resources :events
-  map.follow "/follow", :controller  => "users",  :action  => :new
-  map.home '/', :controller => 'pages', :action => 'home'
-  map.contact '/contact', :controller => 'pages', :action => 'contact'
-  map.art '/art', :controller => 'pages', :action => 'art'
-  map.about '/about', :controller => 'pages', :action => 'about'
-  map.menu '/menu', :controller => 'pages', :action => 'menu' 
-  map.blog '/blog', :controller => 'pages', :action => 'blog' 
-  map.catering '/catering', :controller => 'pages', :action => 'catering' 
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  match  "/follow" => "users#new"
+  root :to  =>  'pages#home'
   constraints(:host => /empanadaintifada.com/) do
-    root :to => redirect("http://www.example.com")
-    match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
+   # root :to => redirect("http://www.empanadaintifada.com")
+    #match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
   end
+
+  match  '/contact' => 'pages#contact'
+  match  '/art' => 'pages#art'    
+  match  '/about' => 'pages#about'
+  match '/menu' => 'pages#menu'   
+  match '/blog' => 'pages#blog'   
+  match '/catering'=> 'pages#catering'
+  match ':controller/:action/:id'
+  match ':controller/:action/:id.:format'
 end
   # The priority is based upon order of creation: first created -> highest priority.
 
