@@ -8,6 +8,9 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Eiweb
   class Application < Rails::Application
+    config.autoload_paths += %W(#{config.root}/lib)#used to refer to no_www, which creates a canonicla path without wwws
+
+    config.middleware.use "NoWww"
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
