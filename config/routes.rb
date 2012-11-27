@@ -1,7 +1,7 @@
 Eiweb::Application.routes.draw do
 
   constraints(:host => /empanadaintifada.com/) do
-    root :to => redirect("http://www.example.com")
+    root :to => redirect("http://www.empanadaintifada.com")
     match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
   end
 
