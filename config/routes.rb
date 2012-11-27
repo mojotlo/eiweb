@@ -13,8 +13,10 @@ ActionController::Routing::Routes.draw do |map|
   map.catering '/catering', :controller => 'pages', :action => 'catering' 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-
-
+  constraints(:host => /empanadaintifada.com/) do
+    root :to => redirect("http://www.example.com")
+    match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
+  end
 end
   # The priority is based upon order of creation: first created -> highest priority.
 
