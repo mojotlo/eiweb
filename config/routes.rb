@@ -5,8 +5,8 @@ Eiweb::Application.routes.draw do
   match  "/follow" => "users#new"
   root :to  =>  'pages#home'
   constraints(:host => /empanadaintifada.com/) do
-   # root :to => redirect("http://www.empanadaintifada.com")
-    #match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
+   root :to => redirect("http://www.empanadaintifada.com")
+   match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
   end
 
   match  '/contact' => 'pages#contact'
