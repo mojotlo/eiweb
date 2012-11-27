@@ -5,6 +5,7 @@ gem 'rails', '3.0.9'
 gem 'pg'
 gem 'rmagick' 
 gem "paperclip", "~> 3.0"
+gem 'twitter'
 
 group :development do
   gem 'rspec-rails'
@@ -24,7 +25,7 @@ group :test do
   gem 'autotest-growl', '0.2.9'
   gem 'geokit-rails3'
   gem 'gmaps4rails'
-  gem 'twitter'
+
 end
 
 
