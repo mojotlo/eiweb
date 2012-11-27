@@ -78,17 +78,53 @@ text-align: center; float: left; }
 		-webkit-border-radius: 8px; 
 		-moz-border-radius: 8px;
 		}	
-#sn_text {float: left; width: 85%;}
-#sn_pic {float: left; width: 8%; position: relative;}
-#sn_pic img{float: left; width: 100%}
+
+
+#news_title {float: left; width: 34%; margin-bottom: .5em; 	
+				}
+
+#special_news h3 {float: left; font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif; padding: 0; margin: 0; padding-left: .3em; margin-bottom: .5em; width: 100%; position: relative;}
+				
+#news_sliders {float: left; width: 60%; border-left: #535353 solid .2em; padding-left: 4%}
+
+#special_news li {float: left;}	
+
+.bx-controls {position: relative; right: 28%; bottom: 20px; width: 100px !important;}
+.bx-pager-item {float: left; width: 15%;}	
+		ul#news_items {float: left; width: 55%; margin-left: 3%; position: relative; }		
+
+		#news .bx-viewport {float: left;}
+
+		a.news-item {float: left; width: 100%; margin-bottom: 1em; position: relative;}
+		#news li {float: left;}
+		.news-item img {width: 13%; float: left;}
+		.news-item { color: white; font-weight: 700; ;}
+		.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 1.3em; width: 55%; float: left;}
+		#details {widith: 1.5em;em;}
+		#tdm {background: white;}
+
+
 #special_news h1 {font-family: "Rockwell-extra-bold", sans-serif; font-size: 14pt; font-weight: 400; padding: 0; float: left;margin: .1em;}
 #special_news p {float: left; padding: 0; margin: .1em;}		
 #special_news a {color: white;}
+
+#special_news li, #special_news ul {padding: 0px}
+.bx-viewport {height: 55px !important;}
+#go_nola_logo, #eater_nola_logo {width: 55px}
+
+#last_tweet {float: left; width: 65%; position: relative; background: black; padding: 2% }
+#twitter-logo {float: left; width: 4em;}
+#last_tweet #most_recent_tweet {font-size: .8em; padding: 0; margin: 0; width: 30%; float: left; color: #c1c1c1; }
+#last_tweet #tweet_time {font-size: 1em; padding: 0; width: 50%; margin: 0; color: #c1c1c1; margin-left: 5%; float: left;}
+#last_tweet #tweet {float: left; width: 100%; font-size: .8em;}
+
+
 
 #header {float: left; width: 56%; position: relative; color: black;}
 #header img  {float:left; width: 100%; margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
 #header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
 	position: relative;}
+
 
 
 #email {font-weight: 900;}
@@ -106,18 +142,27 @@ text-align: center; float: left; }
 #right_column {width: 63%; margin-left: 3%; position: relative; float: left;}
 
 #left_column {width: 32%; min-height: 60em; position: relative; float: left; background: none repeat scroll 0% 0% rgb(38, 38, 38); padding-left: 2%; margin: 0px;}
-#left_column h3 {color:white; }
-#left_column p {font-size: 10pt;}
+#left_column h3 {color:white; font-size: 1.8em; }
 #left_column iframe {background: #57b6dd;}
 #twitter_explanation {width: 90%; margin-left: 0; font-family: "Classic-Round"}
-#twitter_explanation a {color: white; text-decoration: underline;}
-#twtr-widget-1 {margin-top: .4em;}
-#left_column a {border: none;; padding: none; color: white; }
 #left_column a img  {border: none;}
+#left_column a img.rss_button {width: 35%; margin-right:  30%; border: solid #efefef .3em; }
 
+
+
+#social_media {padding: 0; padding-right: 1.5em; }
+#social_media li {list-style-type: none; color: white; border: dotted white .1em; background: #3c3c3c; float: left; margin-bottom: .3em;width: 100%; }
+#social_media span.sm_summary {font-family: "arabolic"; color: white; font-size: 18pt; position: relative; float: left; width: 100%; margin-top: .5em;}
+#social_media span.sm_summary img {width: .9em; margin: .3em;  float: left; }	
+#left_column #email_subscribe {font-size: 1.4em; margin-left: 0;}
+#left_column #text-alert {font-size: 1.4em}
 #footer {float: left; margin: 0 auto; float: left; margin-left: 1%; width: 99%; margin-top: .3em; 	
 	position: relative; padding-bottom: 1.5em;}
+	
+#social_media .text_exp {float: left; margin-left: 3em;}
 
+#twitter_div {float: left; }
+#twitter_div p {font-size: 1.1em;}
 #footer li {width: 20%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .75em; padding: 0; margin: 0;}
 li#email {width: 24%;}
 li#blog {width: 23%;}

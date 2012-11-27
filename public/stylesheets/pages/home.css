@@ -29,17 +29,7 @@ opaciity:  0.0;
     z-index:9;}
 #slideshow img {float: left; width: 19.25em; height: 14.05em;}
 
-#news { float: left; width: 100%; padding-top: .4em; position: relative;
-	}
-#news_title {float: left; width: 100%; margin-bottom: .5em;
- }
-#news h3 {font-size: 1.5em; color: white; font-family: "Arabolic", sans-serif; padding: 0; margin: 0; padding-left: .3em; margin-bottom: .5em; }
-#news_items {float: left; width: 100%; margin-left: 3%; position: relative; }
-a.news-item {float: left; width: 100%; margin-bottom: 1em; position: relative;}
-.news-item img {width: 13%; float: left;}
-.news-item { color: white; font-weight: 700; ;}
-.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 1.3em; width: 55%; float: left;}
-#details {widith: 1.5em;em;}
+
 
 #right_column h2 {font-family: "arabolic"; font-size: 2em; width: 100%; float: left; color: white;}
 #right_column h2 a {color: white;}

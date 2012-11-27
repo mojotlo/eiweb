@@ -1,5 +1,7 @@
 # Methods added to this helper will be available to all templates in the application.
+
 module ApplicationHelper
+require "time"
   def css_path
     # use :edit and :new css instead of :update and :delete in order to render
     # rather than redirect on errors
@@ -15,5 +17,6 @@ module ApplicationHelper
   end
   def flash_box
 
-  end
+  end 
+
 end

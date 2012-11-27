@@ -1,8 +1,51 @@
-<div id="special_news">
-<div id="sn_text">
-	<h1> Calling All Artists! Design A Mobile Mural on Our Truck</h1>
-	<p>Announcing the Empanada Intifada's "This is Not a Food Truck" Contest.  Submit mural ideas and sketches to empanada.intifada@gmail.com.  Deadline extended! Details on our <a href="/art">contest page</a></p>
-</div>
-<div id="sn_pic"><%= image_tag "dream_truck.png" %> </div>
 
+	<div id="special_news"> 
+		<div id="news_title">
+		<h3> Empanada Intifada News:</h3>
+	
+		</div>
+		<div id="news_sliders">
+		<ul class="bxslider" id="news_items" >	
+			<li>
+				<img src="images/logo_twitter.png" alt="twitter logo" id="twitter-logo"/>
+				<div id="last_tweet">
+
+						<p id="most_recent_tweet">most recent tweet:</p>
+						<p id="tweet_time">
+							<%=  distance_of_time_in_words(Twitter.user_timeline("empanadaintifad").first.created_at, Time.now) %> ago
+						</p>
+				<p id="tweet"><%=  Twitter.user_timeline("empanadaintifad").first.text %>
+				</p></div>
+			</li>
+			<li>
+				<a class="news-item" href="http://www.thedailymeal.com/101-best-food-trucks-america-2012-slideshow#13" target="_blank">
+					<img id="tdm" src="/images/TDM_logo_footer.png"/> 
+					<span> EI Named to "Best 101 Food Trucks in America"</span> 
+				</a>
+			</li>			
+			<li>
+			<a class="news-item" href="http://www.gonola.com/2011/09/20/gonola-top-5-new-orleans-food-trucks.html" target="_blank">
+				<img id="go_nola_logo" alt="GO Nola logo" src="/images/go_nola.jpg"/> 
+				<span> GoNOLA names EI top New Orleans food truck </span> 
+			</a>
+			</li>
+
+		<li>	
+			<a class="news-item" href="http://www.details.com/style-advice/food-and-drinks/201205/farmers-markets-at-night" target="_blank">
+				<img id="details" src="/images/details.jpg"/> 
+				<span> Details Magazine Shows Love for the Mestizo Meat Pie</span> 
+			</a>
+		</li>
+		<li>
+
+			<a class="news-item" href="http://nola.eater.com/archives/2012/06/01/guerilla-trucking-with-empanad-intifadas-taylor-jackson.php" target="_blank">
+				<img src="/images/eater-nola-icon.png" id="eater_nola_logo" alt="Eater Nola logo" src/> 
+				<span> Eater NOLA goes long with EI </span> 
+			</a>
+		</li>
+
+	</ul>
+	</div>
 </div>
+
+

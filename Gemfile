@@ -22,6 +22,9 @@ group :test do
   gem 'autotest-rails-pure', '4.1.2'
   gem 'autotest-fsevent', '0.2.5'
   gem 'autotest-growl', '0.2.9'
+  gem 'geokit-rails3'
+  gem 'gmaps4rails'
+  gem 'twitter'
 end
 
 
