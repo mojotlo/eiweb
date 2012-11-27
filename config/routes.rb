@@ -1,13 +1,16 @@
 Eiweb::Application.routes.draw do
+
+  constraints(:host => /empanadaintifada.com/) do
+    root :to => redirect("http://www.example.com")
+    match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
+  end
+
   resources :users
   resources :emails
   resources :events
   match  "/follow" => "users#new"
   root :to  =>  'pages#home'
-  constraints(:host => /empanadaintifada.com/) do
-   root :to => redirect("http://www.empanadaintifada.com")
-   match '/*path', :to => redirect {|params| "http://www.empanadaintifada.com/#{params[:path]}"}
-  end
+
 
   match  '/contact' => 'pages#contact'
   match  '/art' => 'pages#art'    
