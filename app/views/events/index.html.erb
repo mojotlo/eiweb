@@ -4,6 +4,9 @@
 
 
 	<div id="left_column">
+		<% @event=@events.last %> 
+		<% if @event.date >= 32.hours.ago %> 
+
 		<div id="google_map">
 			<h3>Locations of upcoming events</h3>
 			
@@ -15,8 +18,10 @@
 			 :markers     => {"data" => @json }
 			) %>
 		</div>
+			<% end %>
 		<%= render :partial => "shared/left_column"%>
 	</div>
+
 	
 	<div id="right_column">
 
@@ -33,14 +38,14 @@
 			<% @events=Event.find(:all, :order => :date) %> 
 			<% unless defined? (old_date) 
 			 	last_date=5.days.ago
-				iterator = 0
+
 			end %>
 			<% @events.each do |event| %> 
 
 			<% @event=event %>
 		 
 			 <% if @event.date >= 32.hours.ago %> 
-				<% iterator=iterator+1 %>
+
 			<div class="event_container">
 
 				<div class="date_container">
