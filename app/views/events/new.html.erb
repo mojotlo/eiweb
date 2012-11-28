@@ -21,12 +21,17 @@
 	<%=f.text_field :details, :placeholder => "Describe the event"%>
 </div>
 <div class="field">
+	<%=f.label :address %>
+	<%= f.text_field :address %>
+</div>
+<div class="field">
 	<%=f.label :date %>
 	<%= f.datetime_select :date %>
 </div>
 <div class="field">
 	<%=f.label :Pending? %>
 	<%= f.check_box :pending, {} %>
+
 </div>
 <div class="field">
 	<%=f.label :password %>

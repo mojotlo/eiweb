@@ -7,10 +7,10 @@
 
 		Empanada Intifada | New Orleans, Louisiana | Guerrilla Gourmet Food Truck.  		<%= @title %> 
 	</title>
-	
+<%= stylesheet_link_tag 'gmaps4rails' %>	
 	<link rel ="shortcut icon" href="/images/favicon.ico"/>
 	<%= stylesheet_link_tag( css_path, :media => :all ) %>
-<%= stylesheet_link_tag 'gmaps4rails' %>
+
 	<%= javascript_include_tag :defaults %>
 	<%= javascript_include_tag 'application' %> 
 	<!-- bxSlider CSS file -->
@@ -125,9 +125,9 @@ $(function() {
 	
 	<body>
 		
-				<%= yield :scripts %>
 		<%= flash_box %>
 		<%= yield %>
+		<%= yield :scripts %>
 
 	</body>
 

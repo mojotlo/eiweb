@@ -20,11 +20,14 @@ class EventsController < ApplicationController
   
   def show
     @event=Event.find(params[:id])
-
+    @json = @event.to_gmaps4rails
   end
 
   def index
     @events=Event.all
+    @json = Event.all.to_gmaps4rails
+
+    
   end
 
   def edit

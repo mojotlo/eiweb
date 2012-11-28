@@ -1,9 +1,15 @@
 @import url("/stylesheets/site_all.css");
 
 #right_column {margin-left: 0;}
-#right_column .title {font-family: "arabolic"; font-size: 1.5em; font-weight: 500; color: white; margin-left: 5%; margin-bottom: 0;}
+#event_intro {position: relative; float: left; width: 100%; }
+#right_column .title {font-family: "arabolic"; font-size: 1.5em; font-weight: 500; color: white; margin-left: 5%; margin-bottom: 0; float: left;}
 
-#right_column .twitter_caveat {float: left; margin-left: 5%;}
+#right_column .twitter_caveat {float: left; margin-left: 5%; }
+
+#google_map {float: left; width: 90%; position: relative;}
+.map_container {float: left; width: 100%; height: 400px; position: relative;}
+#map {float: left; width: 100%; height: 100%;}
+
 div.event_container {background: #262626; float: left; width: 100%; position: relative; border: solid #333 .1em; margin-left: 2.5%; padding-top: .2em;}
 .date_container {float: left; width: 30%;  position: relative; padding: 1%;}
 
@@ -12,7 +18,6 @@ div.event_container {background: #262626; float: left; width: 100%; position: re
 .date_subcontainer {color: black; float: left; width: 25%; position: relative; background: url("/images/empanada-logo_background_only.png"); padding: .2em .5em;;  border: white solid .2em; margin-left: .8em; margin-top:.5em;}
 .event_date {color: black; float: left; width: 100%; font-size: 1.6em;}
 .event_month {color: black; float: left; width: 100%; font-size: 1.4em;}
-
 
 
 .pending {color: yellow; float: left; width: 100%; margin-top:.9em; font-size: .8em;}
@@ -26,3 +31,5 @@ div.event_container {background: #262626; float: left; width: 100%; position: re
 #right_column .fb-like { margin-left: 2.5%; width: 95%; margin-bottom: .5em; margin-top: .5em; padding: .2em;}
 
 .time_like_container {float: left; width: 25%; position: relative;}
+
+

@@ -4,35 +4,47 @@
 
 
 	<div id="left_column">
+		<div id="google_map">
+			<h3>Locations of upcoming events</h3>
+			
+			<%=   gmaps(
+			:map_options => {"auto_adjust" => true, 
+			  			"zoom" => 11, 
+			  			"auto_zoom"  => false,   
+			  			:last_map    => false},
+			 :markers     => {"data" => @json }
+			) %>
+		</div>
 		<%= render :partial => "shared/left_column"%>
 	</div>
 	
 	<div id="right_column">
 
 		<div id="events">
-			
 			<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
+			<div id="event_intro">
 			<h3 class="twitter_caveat">
 				<-- Check twitter feed for updates and details
 			</h3>
+		</div>			
+
 
 
 			<% @events=Event.find(:all, :order => :date) %> 
 			<% unless defined? (old_date) 
 			 	last_date=5.days.ago
+				iterator = 0
 			end %>
 			<% @events.each do |event| %> 
 
 			<% @event=event %>
-			 <% if @event.date >= 32.hours.ago %>
-
-
-
+		 
+			 <% if @event.date >= 32.hours.ago %> 
+				<% iterator=iterator+1 %>
 			<div class="event_container">
 
 				<div class="date_container">
 					<% if event.date.strftime("%d") != last_date.strftime("%d")%>
-
 
 					<span class="event_day">
 
@@ -50,6 +62,7 @@
 
 	
 					</div>
+
 
 
 				<% end %>
@@ -81,13 +94,10 @@
 					</div>
 
 				</div>
+
 			</div>	
 			<% last_date=event.date%> 
-		 <div id="map_canvas" style="width: 320px; height: 480px;"></div>
-		  <div>
-		    <input id="address" type="textbox" value=<%= "#{event.address}" %> >
-		    <input type="button" value="Encode" onclick="codeAddress()">
-		  </div>
+
 			<% end %><!--end if event is later than today-->
 
 

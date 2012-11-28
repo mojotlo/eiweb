@@ -1,3 +1,6 @@
 @import url("/stylesheets/site_all.css");
 @import url("/stylesheets/events/index.css");
 
+#google_map {margin-left: 5%;}
+.map_container {float: left; width: 100%; height: 400px; position: relative}
+#map {float: left; width: 100%; }

@@ -56,6 +56,19 @@
 	</div>
 	<div class="fb-like" data-href="http://www.empanadaintifada.com/events/<%="#{@event.id}"%>" data-send="true" data-layout ="button_count" data-width="450" data-show-faces="true" data-action="recommend"  data-colorscheme="dark" data-font="verdana"></div>
 	</div>
+		<% if @event.address %>
+	<div id="google_map">
+		<h3>Event Location - <%= @event.address %> </h3>
+
+		<%=   gmaps(
+		:map_options => {"auto_adjust" => true, 
+		  			"zoom" => 11, 
+		  			"auto_zoom"  => false,},
+		 :markers     => {"data" => @json }
+		) %>
+	</div>
+	<% end %>
+	
 </div>
 </div>
 </div>
