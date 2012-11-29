@@ -6,7 +6,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,  
   :domain               => "gmail.com",  
   :user_name            => "empanada.intifada",  
-  :password             => "Empanarnos",  
+  :password             => IO.read(Rails.root + "config/mail_password.txt"),  
   :authentication       => :login,  
   :enable_starttls_auto => true  
 }

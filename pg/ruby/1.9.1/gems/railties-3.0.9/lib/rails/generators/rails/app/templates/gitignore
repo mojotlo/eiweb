@@ -2,3 +2,5 @@
 db/*.sqlite3
 log/*.log
 tmp/
+config/mail_password.txt
+config/event_password.txt

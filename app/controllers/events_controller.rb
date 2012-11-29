@@ -68,7 +68,8 @@ class EventsController < ApplicationController
    
 private
  def  password_check (user_pass)
-   @password="EI"
+   @document_path=Rails.root + "config/event_password.txt"
+   @password=IO.read(@document_path)
    if @password==user_pass 
      return true
     else
