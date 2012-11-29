@@ -29,7 +29,7 @@
 			<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
 			<div id="event_intro">
 			<h3 class="twitter_caveat">
-				<-- Check twitter feed for updates and details
+				Check twitter feed for updates and details
 			</h3>
 		</div>			
 
@@ -104,12 +104,15 @@
 			<% last_date=event.date%> 
 
 			<% end %><!--end if event is later than today-->
-
+		
+			<% @event=@events.last %> 
 
 			<% end %><!--end for block-->
-		
-
+			<% if @event.date < 32.hours.ago %>
+			<h1 id="no_events">  No Events Scheduled</h1>
+			<% end %>
 	</div>
+	
 	
 	
 

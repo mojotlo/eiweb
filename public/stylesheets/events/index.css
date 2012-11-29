@@ -31,5 +31,5 @@ div.event_container {background: #262626; float: left; width: 100%; position: re
 #right_column .fb-like { margin-left: 2.5%; width: 95%; margin-bottom: .5em; margin-top: .5em; padding: .2em;}
 
 .time_like_container {float: left; width: 25%; position: relative;}
-
+#no_events {width: 100%; float: left; font-family: "Arabolic"; margin-left: 10%;}
 
