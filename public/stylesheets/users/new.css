@@ -16,11 +16,11 @@ span.value {float: left; width: 74%; font-size: 1.3em; color: white;}
 h2 {color: white; font-family: 'Arabolic'; margin-top: .8em; float: left; width: 100%; font-size: 1.7em;}
 #newsletter_title {font-family: 'Arabolic'; font-size: 1.3em}
 
-.field {float: left; position: relative; width: 100%; color: white; font-family: "Jura-bold"; font-size: 1.5em; margin-bottom: .4em;
+#right_column .field {float: left; position: relative; width: 100%; color: white; font-family: "Jura-bold"; font-size: 1.5em; margin-bottom: .4em;
 }
-.field label {float: left; margin-top: .3em;}
-.field input {width: 65%; min-width: 380px; margin-right: 22%; margin-left: 3%; float: left; font-family: "Jura-bold"; font-size: 1.3em;}
- input#user_submit {float: right; margin-left: 50%; background: url("/images/empanada-logo.png");
+#right_column .field label {float: left; margin-top: .3em;}
+#right_column .field input {width: 65%; min-width: 380px; margin-right: 22%; margin-left: 3%; float: left; font-family: "Jura-bold"; font-size: 1.3em;}
+#right_column  input#user_submit {float: right; margin-left: 50%; background: url("/images/empanada-logo.png");
  height: 1.5em; font-size: 2em; font-family: "arabolic"; margin-top: .2em; margin-bottom: .6em; margin-right: 27%;}
 
 h3 {color:white;}

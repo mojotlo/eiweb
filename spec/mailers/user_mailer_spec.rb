@@ -12,7 +12,7 @@ describe UserMailer do
      @mailer=UserMailer.registration_confirmation(@user)
     end
     it "should deliver successfully" do
-      lambda { UserMailer.deliver(@mailer) }.should_not raise_error
+      lambda {@mailer.deliver}.should_not raise_error
     end
   end
 end

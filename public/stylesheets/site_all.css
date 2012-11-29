@@ -173,7 +173,7 @@ li#cell {width: 13%;}
 
 #left_column span#arabolic {font-family: "Arabolic"; float: left; margin-bottom: .5em;}
 #left_column .field {width: 100%; float: left;}
-#left_column .field label {width: 25%; float: left;}
+#left_column .field label {width: 18%; margin-left: 3%; float: left;}
 #left_column .field input {width: 70%; float: left;}
 #left_column .actions {width: 10%; float: left; margin-left: 70%;}
 /*used in contact and catering*/
