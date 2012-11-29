@@ -2,6 +2,7 @@ class EventsController < ApplicationController
 
   def new
     @event=Event.new
+        @user=User.new
   end
   def create
       @event=Event.new(params[:event])
@@ -21,18 +22,19 @@ class EventsController < ApplicationController
   def show
     @event=Event.find(params[:id])
     @json = @event.to_gmaps4rails
+        @user=User.new
   end
 
   def index
     @events=Event.all
     @json = Event.all.to_gmaps4rails
-
+    @user=User.new
     
   end
 
   def edit
     @event=Event.find(params[:id])
- 
+     @user=User.new
   end
  
   def update

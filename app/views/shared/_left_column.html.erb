@@ -6,15 +6,32 @@
 <ul id="social_media">
 	
 	<li> 
-		<a id="text-alert" href="/follow"><span class="sm_summary"><img src="/images/empanada-logo.png"/>Text-Alerts</span></a>
-</a> <span class="text_exp">Receive a text message every time we roll into your neighborhood </span>
+		<a id="text-alert" href="/follow"><span class="sm_summary"><img src="/images/empanada-logo.png"/>Text-Alerts</span>
+</a> <span class="text_exp">Receive a text message every time we roll into your neighborhood </span></a>
 	</li>
 		
 	<li>
+		<a href="/follow">
 		<span class="sm_summary"><img src="/images/empanada-logo.png"/>Email Newsletter</span>
-		<span class="text_exp"><a href="/follow">Subscribe</a>
-	</li></span>
+		<span class="text_exp">Sign up for weekly email plans and announcements</span>
+		</a>
+		<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
+		<%=render "shared/error_messages", :object  => f.object%>
+		<div class="field">	
+			<%=f.label :name %>
+			<%=f.text_field :name, :placeholder => "Name"%>
+		</div>
+		<div class="field">
+			<%=f.label :email %>
+			<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+		</div>
 
+		<div class="actions">
+			<%=f.submit "Submit" %>
+		</div>
+		<% end %>
+	</li>
+		
 	<li>
 		<span class="sm_summary">
 			<img src="/images/empanada-logo.png"/>Twitter

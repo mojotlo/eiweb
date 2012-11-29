@@ -2,6 +2,7 @@ class EmailsController < ApplicationController
   def new
     @title = "new email"
     @email = Email.new
+        @user=User.new
   end    
   def create
     @email=Email.new(params[:email])
@@ -18,6 +19,7 @@ class EmailsController < ApplicationController
   end
   def show
     @email=Email.find(params[:id])
+        @user=User.new
   end
 
 end

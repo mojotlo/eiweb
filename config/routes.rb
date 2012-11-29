@@ -1,13 +1,9 @@
 Eiweb::Application.routes.draw do
-
-
   resources :users
   resources :emails
   resources :events
-  match  "/follow" => "users#new"
   root :to  =>  'pages#home'
-
-
+  match  "/follow" => "users#new"
   match  '/contact' => 'pages#contact'
   match  '/art' => 'pages#art'    
   match  '/about' => 'pages#about'
