@@ -1,14 +1,15 @@
 source 'http://rubygems.org'
 
 gem 'mail'
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.7'
 gem 'pg'
 gem 'rmagick' 
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 2.7"
 gem 'twitter'
 gem 'geokit-rails3'
 gem 'gmaps4rails'
 gem 'jquery-rails'
+gem 'spree', '1.1.3'
 
 group :development do
   gem 'rspec-rails'
