@@ -17,5 +17,9 @@ module EventsHelper
     end
     return day_word
   end
-
+  def later_than_yesterday(date)
+    current_day=Time.now
+    assert current_day<date
+  end
 end
+

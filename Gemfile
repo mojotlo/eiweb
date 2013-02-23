@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'mail'
-gem 'rails', '3.2.7'
+gem 'rails', '3.2.11'
 gem 'pg'
 gem 'rmagick' 
 gem "paperclip", "~> 2.7"
@@ -9,12 +9,13 @@ gem 'twitter'
 gem 'geokit-rails3'
 gem 'gmaps4rails'
 gem 'jquery-rails'
-gem 'spree', '1.1.3'
+
 
 group :development do
   gem 'rspec-rails'
-  gem 'annotate', ">=2.5.0.pre1"
+  gem 'annotate'
   gem 'faker', '0.3.1'
+
 end
 
 group :test do
@@ -27,8 +28,7 @@ group :test do
   gem 'autotest-rails-pure', '4.1.2'
   gem 'autotest-fsevent', '0.2.5'
   gem 'autotest-growl', '0.2.9'
-
-
+  gem 'ZenTest' , '4.8.3'
 end
 
 

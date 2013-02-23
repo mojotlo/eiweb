@@ -2,12 +2,12 @@ class EventsController < ApplicationController
 
   def new
     @event=Event.new
-        @user=User.new
+        @user=User.new #necessary for sidebar email signup
   end
   def create
       @event=Event.new(params[:event])
       @user_pass=@event.password
-
+        @user=User.new #necessary for sidebar email signup
       if password_check(@user_pass)==true
         @event.password=nil
         @event.save
@@ -22,13 +22,15 @@ class EventsController < ApplicationController
   def show
     @event=Event.find(params[:id])
     @json = @event.to_gmaps4rails
-        @user=User.new
+        @user=User.new #necessary for sidebar email signup
   end
 
   def index
     @events=Event.all
-    @json = Event.all.to_gmaps4rails
-    @user=User.new
+    @future_events=Event.where("date > ?", Time.now)
+
+    @json = @future_events.to_gmaps4rails
+    @user=User.new #necessary for sidebar email signup
     
   end
 

@@ -39,17 +39,17 @@
 			<% unless defined? (old_date) 
 			 	last_date=5.days.ago
 
-			end %>
-			<% @events.each do |event| %> 
+			end #allows for looping over date %>
+			<% @future_events.each do |event| %> 
 
 			<% @event=event %>
 		 
-			 <% if @event.date >= 32.hours.ago %> 
+			 <% if @event.date >= 32.hours.ago #excludes events that took place over 32 hours ago %> 
 
 			<div class="event_container">
 
 				<div class="date_container">
-					<% if event.date.strftime("%d") != last_date.strftime("%d")%>
+					<% if event.date.strftime("%d") != last_date.strftime("%d") #no duplicate date info when two events occur on the same day %>
 
 					<span class="event_day">
 
@@ -88,7 +88,7 @@
 							(pending confirmation)
 						</span>
 
-						<% end %><!--end pending-->
+						<% end %>
 				</div>
 
 					<div class="time_like_container">
@@ -108,7 +108,7 @@
 			<% @event=@events.last %> 
 
 			<% end %><!--end for block-->
-			<% if @event.date < 32.hours.ago %>
+			<% if @event.date < 32.hours.ago #creates a filler when all events have passed %>
 			<h1 id="no_events">  No Events Scheduled</h1>
 			<% end %>
 	</div>
