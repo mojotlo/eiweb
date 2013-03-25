@@ -27,12 +27,11 @@ class EventsController < ApplicationController
 
   def index
     @events=Event.all
-    @future_events=Event.where("date > ?", Time.now)
+    @future_events=Event.where("date > ?", Time.now).order("date")
 
     @json = @future_events.to_gmaps4rails
     @user=User.new #necessary for sidebar email signup
-    
-  end
+end
 
   def edit
     @event=Event.find(params[:id])

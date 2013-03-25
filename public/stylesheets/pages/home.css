@@ -2,34 +2,29 @@
 li#home {background: url("/images/empanada-logo-background-only.png");}
 li#home a:hover {color: black;}
 
-#header img {width: 105%; margin-left:5%;
+#central_content {padding-top: .5em;}
+#header {float: left; width: 100%; position: relative; color: black;}
+
+#header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
+	position: relative;}
+	
+ img#banner {width: 60%; margin-left:2%;
 				border: solid .5em black; float: left; margin-bottom: .5em;}
-				
-#photo_border {border: solid .6em #57b6dd; position: relative; float: left; width: 19.35em; -moz-border-radius: 12px;
-	margin: auto; margin-top: .3em;}
 
 
-#slideshow {
-    position:relative; height: 14.05em; 
-}
+#photo_border {border: solid .6em black; position: relative; float: left; -moz-border-radius: 12px; width: 25%; margin-left: .5em; width: 31%;}
 
-#slideshow DIV {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-opaciity:  0.0;
-}
+#sangria {float: left; width: 100%; }
 
-#slideshow DIV.active {
-    z-index:10; opacity: 1;
-}
+#central_content h2 {font-family: "arabolic"; font-size: 2em; width: 100%; float: left; color: white;}
+#central_content h2 a {color: white;}
 
-#slideshow DIV.last-active {
-    z-index:9;}
-#slideshow img {float: left; width: 19.25em; height: 14.05em;}
+#bottom_nav {margin-top: .5em;}
 
+#tweet_container {position: relative; float: left; width: 50%; border: solid #4b84f3 .1em; margin-left: 1.8%;}
+#tweet_container #last_tweet {width: 97.7%; float: left; background: #262626; padding: .4em;  height: 3.2em; border: solid yellow .1em;}
 
-
-#right_column h2 {font-family: "arabolic"; font-size: 2em; width: 100%; float: left; color: white;}
-#right_column h2 a {color: white;}
+#tweet_container img {float: left; width: 10%; }
+#tweet_container #tweet_time {width: 20%; float: left; padding: 0; }
+#tweet_container #most_recent_tweet {width: 20%; padding: 0;}
+#tweet_container p#tweet {width: 40%; padding: 0; margin: 0}

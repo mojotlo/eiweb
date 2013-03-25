@@ -1,36 +1,40 @@
 <%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
+	<%= render :partial => "shared/last_tweet"%>
+	<div id="central_content">
+			<img id="logo" src = "/images/empanada-logo.png" alt="logo"/>	
+		<div id="email_intro">
+		
+			<p>Get our email newsletter - 
+				<span id="newsletter_title"> The Street Eats Beat</span>
+			</p>
+			<a name= "email-signup">
+				<h2>
+					<a name= "email-signup" >Sign up for EI emails</a>
+				</h2>
+			</a>
+		</div>
+		<div id="email_form">
+			<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
+			<%=render "shared/error_messages", :object  => f.object%>
+			<div class="field">	
+				<%=f.label :name %>
+				<%=f.text_field :name, :placeholder => "Name"%>
+			</div>
+			<div class="field">
+				<%=f.label :email %>
+				<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+			</div>
 
-
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
+			<div class="actions">
+				<%=f.submit "Signup!" %>
+			</div>
+			<%end%>
+		</div>	
+		<p id="exit">Or use a link below to <a href="/text_message" > sign up for text message alerts</a> when we're in your neighborhood, follow our tweets on twitter, like our posts on facebook, or get an rss feed of our blog.</p>
 	</div>
-	<div id="right_column">
 
-	<%= render :partial => "shared/contact_header"%>
-<div id="party">
-
-	
-<a name= "email-signup" ><h2><a name= "email-signup" >Sign up for EI emails</a></h2>
-<p>Get our email newsletter - <span id="newsletter_title"> The Street Eats Beat</span></p>
-<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
-<%=render "shared/error_messages", :object  => f.object%>
-<div class="field">	
-	<%=f.label :name %>
-	<%=f.text_field :name, :placeholder => "Name"%>
-</div>
-<div class="field">
-	<%=f.label :email %>
-	<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+ <%= render :partial => "shared/bottom_nav"%>
 </div>
 
-<div class="actions">
-	<%=f.submit "Signup!" %>
-</div>
-<%end%>
 
-
-</div>
-<%= render :partial  => "shared/text_message_instructions" %> 
-	
-	

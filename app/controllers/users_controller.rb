@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       UserMailer.registration_confirmation(@user).deliver
       UserMailer.registration_list.deliver
       flash[:success] = "Welcome to the Empanada Intifada!"
-       redirect_to contact_path
+       redirect_to text_message_path
     else 
       @title = "Sign up"
       render 'new'

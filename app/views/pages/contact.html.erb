@@ -2,32 +2,18 @@
 
 <div id="central_container">
 
-
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
-	</div>
-	<div id="right_column">
-		<section class="round">
-			<% flash.each do |key, value| %>
-			<div class="flash <%=key %>"><%= value %></div>
-			<% end %>
-			<%= yield %>
-		</section>
-
-
+<div id="central_content">
 	<%= render :partial => "shared/contact_header"%>
 
 <h2><a name="textmark">	<%=link_to "Where is the Empanada Intifada?" , new_user_path, :class => "signup_button_round"%> </a></h2>
 <div id="texts">
-
-
-		<h2 id="text-title">Text message alerts!</h2>
+<a href="text_message">		<h2 id="text-title">Text message alerts!</h2> </a>
 		<img id="cell"src='/images/cell-phone-texting-crop.png' alt="cell"/>
 		
 <div id="crystal">		
-<p >Empanada Intifada could be anywhere depending on the vicissitudes of weather, parking, plain old dumb luck, and the whims of its pilots.  Luckily future-seeing crystal balls have been placed in your phones and computers.  </p> <img src="/images/crystal-ball-truck.png"/></div>
+<p >Empanada Intifada could be anywhere depending on the vicissitudes of weather, parking, plain old dumb luck, and the whims of its pilots.  Luckily future-seeing crystal balls have been placed in your phones and computers.  </p> </div>
 <div id="text">
-	<p>If you want to know when the truck is rolling to your area in real time (and get exclusive text-message empanada giveaways), <%=link_to "Join a text message group!" , new_user_path, :class => "signup_button_round"%></p>
+	<p>Check out our free <a href="text_message">text-message service </a> and get an alert any time we're in your area </p>
 
 </div>
 <a name="emailmark"><h2>The Lost Art of Receiving Emails</h2></a>
@@ -42,5 +28,10 @@
 contact us for details: empanada.intifada@gmail.com or (504) 684-5358</p>
 </div>
 </div>
-</div>
+
+	 <%= render :partial => "shared/bottom_nav"%>
+
+	</div>
+	</div>
+	
 	<%= render :partial => "shared/footer" %>

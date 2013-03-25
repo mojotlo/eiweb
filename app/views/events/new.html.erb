@@ -1,13 +1,7 @@
 <%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
-
-
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
-	</div>
-	<div id="right_column">
-
-	<%= render :partial => "shared/contact_header"%>
+<%= render :partial => "shared/last_tweet"%>
+<div id="central_content">
 <div id="new_event">
 
 <%=form_for (@event), :html  => {:multipart  => true }, :remote => true do |f| %>
@@ -43,8 +37,10 @@
 </div>
 <%end%>
 
-
+</div>
 </div>
 
+ <%= render :partial => "shared/bottom_nav"%>
+</div>
 	
 	

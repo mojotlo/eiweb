@@ -102,6 +102,8 @@ text-align: center; float: left; }
 		.news-item span {margin-left: 5%; text-decoration: underline;  sans-serif; font-size: 1.3em; width: 55%; float: left;}
 		#details {widith: 1.5em;em;}
 		#tdm {background: white;}
+		.new_item img.carousel {position: absolute; bottom: 5em;  z-index: 2; }
+		#image_1 {position: relative; left: 5em; width: .3em;}
 
 
 #special_news h1 {font-family: "Rockwell-extra-bold", sans-serif; font-size: 14pt; font-weight: 400; padding: 0; float: left;margin: .1em;}
@@ -119,15 +121,12 @@ text-align: center; float: left; }
 #last_tweet #tweet {float: left; width: 100%; font-size: .8em;}
 
 
-
-#header {float: left; width: 56%; position: relative; color: black;}
-#header img  {float:left; width: 100%; margin-top: .1em; border-color: black; border-width: .2em; border-style: solid;}
-#header h1 {float: left; width: 60%; margin-left: 10%; margin-right: 0%;
-	position: relative;}
-
+#tweet_container {position: absolute; right: 0%; top: 0%; width: 10%; padding: .3em; border: solid #4b84f3 .1em;  z-index: 2;}
+#tweet_container #last_tweet {width: 97%; background: #262626; border: solid yellow .1em; padding-bottom: .1em;}
+#tweet_container #tweet_time {width: 100%}
+#tweet_container #most_recent_tweet {width: 100%}
 
 
-#email {font-weight: 900;}
 
 #central_container {margin: 0 auto; float: left; margin-left: 4%; width: 90%; min-width: 800px;	
 	position: relative; background-color: black; 
@@ -136,46 +135,79 @@ text-align: center; float: left; }
 	-moz-border-radius: 8px; 
 	background: #333 url("../../images/steel_texture.png"); padding-bottom: 2.5em}
 
+
+
+
 #facebook_like {width: 225px; border: solid .3em white;}
 #central_container p {font-size: 14pt; color: white; font-family: "Classic-Round", arial; position: relative}	
 
-#right_column {width: 63%; margin-left: 3%; position: relative; float: left;}
 
-#left_column {width: 32%; min-height: 60em; position: relative; float: left; background: none repeat scroll 0% 0% rgb(38, 38, 38); padding-left: 2%; margin: 0px;}
-#left_column h3 {color:white; font-size: 1.8em; }
-#left_column iframe {background: #57b6dd;}
+
+
+#central_content {min-height: 20em;}
+
 #twitter_explanation {width: 90%; margin-left: 0; font-family: "Classic-Round"}
-#left_column a img  {border: none;}
-#left_column a img.rss_button {width: 35%; margin-right:  30%; border: solid #efefef .3em; }
+
+#bottom_nav a img  {border: none;}
+#bottom_nav a img.rss_button {width: 35%; margin-right:  30%; border: solid #efefef .3em; }
+
+#bottom_nav {width: 100%; float: left; position: relative;  padding-left: .5%; position: relative; margin-top: 3em;}
+
+ul#social_media {padding: 0; width: 95%; float: left; margin: 0; margin-left: 1.5%; position: relative;}
+
+#social_media li {list-style-type: none; border-left: solid #262626 .4em; border-top: solid #262626 .4em;; background: #3c3c3c; float: left; margin-bottom: .3em; margin-right: 0%; width: 19.3%; height: 28em; }
 
 
+#social_media li.yellow {background: #ffffbe;}
 
-#social_media {padding: 0; padding-right: 1.5em; }
-#social_media li {list-style-type: none; color: white; border: dotted white .1em; background: #3c3c3c; float: left; margin-bottom: .3em;width: 100%; }
-#social_media span.sm_summary {font-family: "arabolic"; color: white; font-size: 18pt; position: relative; float: left; width: 100%; margin-top: .5em;}
-#social_media span.sm_summary img {width: .9em; margin: .3em;  float: left; }	
+#social_media li.blue {background: #b9f2ff;}
+
+#social_media li#blog_sm {border-right: solid #262626 .4em;}
+
+#social_media li#tm a.bn_link:hover {background: url("/images/beanavista.jpg") 0% 10%; float: left;}
+
+#social_media li#email a.bn_link:hover {background: url("/images/beanavista.jpg") 100% 10%; float: left;}
+
+
+#social_media li#twitter-container a.bn_link:hover {background: url("/images/sasquash.jpg") 0% 10%; float: left;}
+
+#social_media li#facebook_container a.bn_link:hover {background: url("/images/sasquash.jpg") 100% 10%; float: left;}
+
+#social_media li#blog_sm a.bn_link:hover {background: url("/images/sticky_pork.jpg") 10% 10%; float: left;}
+
+
+ a.bn_link {float:left; width: 100%; height: 6em;}
+
+ a.bn_link:hover {background: url("/images/beanavista.jpg"); float: left;}
+
+#social_media div.sm_summary {font-family: "arabolic"; color: #262626; font-size: 18pt; position: relative; float: left; width: 100%; margin-top: .5em;}
+
+.text_exp {float: left; margin-left: .4em;}
+
+
+#facebook_div {background: #7A8B8B; float: left; width: 185px;}
+#social_media div.sm_summary img {width: .9em; margin: .3em;  float: left; }	
 #left_column #email_subscribe {font-size: 1.4em; margin-left: 0;}
 #left_column #text-alert {font-size: 1.4em}
 #footer {float: left; margin: 0 auto; float: left; margin-left: 1%; width: 99%; margin-top: .3em; 	
 	position: relative; padding-bottom: 1.5em;}
-	
-#social_media .text_exp {float: left; margin-left: 3em;}
 
 #twitter_div {float: left; }
 #twitter_div p {font-size: 1.1em;}
 #footer li {width: 20%; list-style-type: none; float: left; position: relative; color: black; font-family: "Classic-Round", sans-serif; font-weight: 900; font-size: .75em; padding: 0; margin: 0;}
-li#email {width: 24%;}
-li#blog {width: 23%;}
-li#cell {width: 13%;}
+
+#bottom nav li#tm a:hover {background: url("/images/beanavista.jpg"); float: left;}
+
+#footer li#email {width: 24%;}
+#footer li#blog {width: 23%;}
+#footer li#cell {width: 13%;}
+
 #footer span.media {float: left; width: 100%; font-family: "amperzand"; font-size: 1.6em; color: white;}
 #footer span.value {float: left; width: 100%; font-size: 1em; color: black;}
 #footer a {color: black;}
 
-#left_column span#arabolic {font-family: "Arabolic"; float: left; margin-bottom: .5em;}
-#left_column .field {width: 100%; float: left;}
-#left_column .field label {width: 18%; margin-left: 3%; float: left;}
-#left_column .field input {width: 70%; float: left;}
-#left_column .actions {width: 10%; float: left; margin-left: 70%;}
+span#arabolic {font-family: "Arabolic"; }
+
 /*used in contact and catering*/
 
 #contact_info {float: left; width: 100%;  margin-left: 2%; font-size: .9em;}

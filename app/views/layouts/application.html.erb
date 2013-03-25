@@ -7,7 +7,7 @@
 
 		Empanada Intifada | New Orleans, Louisiana | Guerrilla Gourmet Food Truck.  		<%= @title %> 
 	</title>
-<%= stylesheet_link_tag 'gmaps4rails' %>	
+<%= stylesheet_link_tag 'gmaps4rails' %>
 	<link rel ="shortcut icon" href="/images/favicon.ico"/>
 	<%= stylesheet_link_tag( css_path, :media => :all ) %>
 
@@ -22,35 +22,13 @@
   body { height: 100%; margin: 0; padding: 0 }
   #map_canvas { height: 100% }
 </style>
+	
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDilGHm_uHAt3im2oYwLLW0yuXWaGJMW24&sensor=false">
 </script>
 
 
 
-<script>
-function slideSwitch() {
-    var $active = $('#slideshow DIV.active');
-
-    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
-
-    var $next =  $active.next().length ? $active.next()
-        : $('#slideshow DIV:first');
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 5000 );
-});
-
-</script>
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function(){
@@ -75,6 +53,7 @@ $(function() {
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
+	
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -86,7 +65,7 @@ $(function() {
 	
 	<script src="javascripts/jquery.bxslider.min.js"></script>
 
-	<script>
+<!--	<script>
 	window.onload = function() {
 	    new TWTR.Widget({
 				id: 'twitter_div',
@@ -119,15 +98,17 @@ $(function() {
 	            }).render().setUser('empanadaintifad').start();
 	};
 	</script>
+	-->
 	
 	</head>
 	
 	<body>
-		
+	
 		<%= flash_box %>
 		<%= yield %>
-		<%= yield :scripts %>
-
+		
+	<%= yield :scripts %>	
 	</body>
+
 
 </html>

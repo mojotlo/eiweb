@@ -1,0 +1,12 @@
+<a id="tweet_container" href="http://www.twitter.com/empanadaintifad">
+
+<div id="last_tweet">
+<img src="/images/logo_twitter.png" alt="twitter logo" id="twitter-logo"/>
+		<p id="most_recent_tweet">most recent tweet:</p>
+		<p id="tweet_time">
+			<%=  distance_of_time_in_words(Twitter.user_timeline("empanadaintifad").first.created_at, Time.now) %> ago
+		</p>
+<p id="tweet"><%=  Twitter.user_timeline("empanadaintifad").first.text %>
+</p>
+</div>
+</a>

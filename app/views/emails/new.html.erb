@@ -3,9 +3,7 @@
 <div id="central_container">
 <div id="central_content">
 	
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
-	</div>
+
 	
 	<div id="right_column">
 		<%=form_for (@email), :html  => {:multipart  => true }, :remote => true do |f| %>
@@ -28,6 +26,10 @@
 		</div>
 	</div>
 	
+</div>
+
+<div id="bottom_nav">
+ <%= render :partial => "shared/bottom_nav"%>
 </div>
 </div>
 	<%= render :partial => "shared/footer" %>

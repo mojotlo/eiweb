@@ -1,13 +1,16 @@
 @import url("/stylesheets/site_all.css");
 
-#right_column {margin-left: 0;}
+#central_content {margin-left: 0;}
 #event_intro {position: relative; float: left; width: 100%; }
-#right_column .title {font-family: "arabolic"; font-size: 1.5em; font-weight: 500; color: white; margin-left: 5%; margin-bottom: 0; float: left;}
+#central_content .title {font-family: "arabolic"; font-size: 1.5em; font-weight: 500; color: white; margin-left: 5%; margin-bottom: 0; float: left;}
+h1.title {width: 100%;}
 
-#right_column .twitter_caveat {float: left; margin-left: 5%; }
+#column_left {width: 30%; float: left; margin-left: 1%;}
+#events {width: 65%; float: left; }
+#central_content .twitter_caveat {float: left; margin-left: 5%; }
 
-#google_map {float: left; width: 90%; position: relative;}
-.map_container {float: left; width: 100%; height: 400px; position: relative;}
+#google_map {float: left; width: 100%; position: relative;}
+.map_container {float: left; width: 100%; height: 400px; position: relative; width: 350px; }
 #map {float: left; width: 100%; height: 100%;}
 
 div.event_container {background: #262626; float: left; width: 100%; position: relative; border: solid #333 .1em; margin-left: 2.5%; padding-top: .2em;}
@@ -28,7 +31,7 @@ div.event_container {background: #262626; float: left; width: 100%; position: re
 
 #central_container p.event_details {color: white; float: left; width: 100%; font-size: 1em; padding: 0; margin: 0;}
 
-#right_column .fb-like { margin-left: 2.5%; width: 95%; margin-bottom: .5em; margin-top: .5em; padding: .2em;}
+#central_content .fb-like { margin-left: 2.5%; width: 95%; margin-bottom: .5em; margin-top: .5em; padding: .2em;}
 
 .time_like_container {float: left; width: 25%; position: relative;}
 #no_events {width: 100%; float: left; font-family: "Arabolic"; margin-left: 10%;}

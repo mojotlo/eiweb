@@ -2,31 +2,18 @@
 <%= render :partial => "shared/news"%>
 <div id="central_container">
 
-<div id="central_content">
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
-	</div>
-			<%= render :partial => "shared/header"%>
-	<div id="right_column">
+	<div id="central_content">
+		
+		<img src="/images/2x8-empanada-banner.jpg" id="banner"/>
 
 		<div id="photo_border">
-		<div id="slideshow">
-	  		<div id="image_div1" class="active">
-				<img src="/images/sasquash.jpg"/>
-			</div>
-	  		<div id="image_div2">
-				<img src="/images/sangria.jpg" />
-			</div>
-			<div id="image_div3">
-				<img src="/images/beanavista.jpg" />
-			</div>
-		</div>	
-		</div>
-		
-				
+			<img src="/images/sangria.jpg" id = "sangria"/>
 
-	<h2> <a href="contact#textmark">Where is the Empanada Intifada?</a></h2>	
+		</div>
+			 <%= render :partial => "shared/last_tweet"%>
+	 <%= render :partial => "shared/bottom_nav"%>
 	</div>
+	
 </div>
-</div>
+
 	<%= render :partial => "shared/footer" %>

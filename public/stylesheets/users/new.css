@@ -2,25 +2,19 @@
 li#follow {background: url("/images/empanada-logo-background-only.png");}
 li#follow a:hover {color: black;}
 
-#header {width: 25%;}
-#header img {width: 100%; float: left; margin-top: 1em;}
-#general {float: left; width: 73%; margin-left: 2%;}
-
-.media{float: left; width: 21%; padding: .1em; color: white; font-size: 1.2em}
-
-
-.wrapper {float: left; width: 100%; margin-top: .4em}
-.wrapper a {color: white; text-decoration: underline;}
-span.value {float: left; width: 74%; font-size: 1.3em; color: white;}
-
-h2 {color: white; font-family: 'Arabolic'; margin-top: .8em; float: left; width: 100%; font-size: 1.7em;}
 #newsletter_title {font-family: 'Arabolic'; font-size: 1.3em}
 
-#right_column .field {float: left; position: relative; width: 100%; color: white; font-family: "Jura-bold"; font-size: 1.5em; margin-bottom: .4em;
+img#logo {width: 40%; float: left; margin-right: 1%; }
+#email_intro {float: left; width: 50%;}
+#email_form {width: 50%; float: left;}
+
+#central_content .field {float: left; position: relative; width: 100%; color: white; font-family: "Jura-bold"; font-size: 1.5em; margin-bottom: .4em;
 }
-#right_column .field label {float: left; margin-top: .3em;}
-#right_column .field input {width: 65%; min-width: 380px; margin-right: 22%; margin-left: 3%; float: left; font-family: "Jura-bold"; font-size: 1.3em;}
-#right_column  input#user_submit {float: right; margin-left: 50%; background: url("/images/empanada-logo.png");
+
+
+#central_content .field label {float: left; margin-top: .3em; width: 20%;}
+#central_content .field input {width: 70%;   margin-left: 3%; float: left; font-family: "Jura-bold"; font-size: 1.3em;}
+#central_content .actions input {float: left; margin-left: 70%; background: url("/images/empanada-logo.png");
  height: 1.5em; font-size: 2em; font-family: "arabolic"; margin-top: .2em; margin-bottom: .6em; margin-right: 27%;}
 
 h3 {color:white;}
@@ -29,3 +23,5 @@ ol {color: white;}
 .explanation {float: left; width: 44%; margin-left: 1%; color: white; font-size: 1.1em}
 
 .text_instruction_wrapper {float:left; width: 100%; margin-bottom: .5em;}
+
+#central_content p#exit {float: left; width: 50%; margin: 0; padding: 0;}

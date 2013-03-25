@@ -1,0 +1,12 @@
+@import url("/stylesheets/site_all.css");
+#flash {background: black; float: left;}
+#text_intro {width: 67%; float: left;}
+#options {width: 58%; float: left;}
+
+img#logo {width: 20%; float: left; margin-right: 1%; }
+h1 {font-size: 1.8em;}
+h1, h2 {color: white; font-family: "Arabolical"}
+h3 {color: white; float: left; width: 100%; text-decoration: underline;}
+#options {float: left; width: 75%;}
+#options p {font-size: 1.6em;}
+#options p span {font-family: "Rockwell-Extra-Bold";}

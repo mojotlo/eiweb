@@ -1,0 +1,93 @@
+<div id="bottom_nav">
+
+<ul id="social_media">	
+	<li id="tm" class="yellow"> 
+		<a id="text-alert" href="/text_message" class="bn_link">
+			<div class="sm_summary">
+				<img src="/images/empanada-logo.png"/>
+				Text-Alerts
+			</div>
+		</a> 
+	<span class="text_exp">Receive a text message every time we roll into your neighborhood</span>
+
+	</li>
+		
+	<li id="email" class="blue">
+		<a href="/follow" class="bn_link">
+			<div class="sm_summary">
+				<img src="/images/empanada-logo.png"/>
+				Email Newsletter
+			</div>
+		</a>
+		<div class="text_exp">
+			Sign up for weekly email plans and announcements
+		</div>
+		<div id="email_form_bn">
+			<%=form_for (@user), :html  => {:multipart  => true }, :remote => true do |f| %>
+			<%=render "shared/error_messages", :object  => f.object%>
+			<div class="field">	
+				<%=f.label :name %>
+				<%=f.text_field :name, :placeholder => "Name"%>
+			</div>
+			<div class="field">
+				<%=f.label :email %>
+				<%=f.text_field :email, :placeholder => "youremail@something.com"%>
+			</div>
+
+			<div class="actions">
+				<%=f.submit "Submit" %>
+			</div>
+			<% end %>
+		</div>
+		
+	</li>
+		
+	<li id="twitter-container" class="yellow">
+		<a href="http://twitter.com/empanadaintifad" class="bn_link">
+		<div class="sm_summary">
+			<img src="/images/empanada-logo.png"/>Twitter
+		</div>
+		</a>
+		<div class="text_exp">
+			<a href="https://twitter.com/empanadaintifad" class="twitter-follow-button" data-show-count="false" data-size="small">
+				Follow @empanadaintifad
+			</a>
+
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</li>
+	
+
+	<li id="facebook_container" class="blue">
+		<a href="http://www.facebook.com/empanadaintifada" class="bn_link">
+			<div class="sm_summary">
+				<img src="/images/empanada-logo.png"/>
+				Facebook
+			</div>
+		</a>
+		<div id="facebook_div" class="text_exp">
+
+		<div class="fb-like-box" data-href="http://www.facebook.com/empanadaintifada" data-width="185" data-show-faces="true" data-stream="false" data-header="true">
+			
+		</div>
+	</div>	
+	</li>
+
+	<li id="blog_sm" class="yellow">
+		<a href="http://blog.empanadaintifada.com" class="bn_link">
+		<div class="sm_summary">
+			<img src="/images/empanada-logo.png"/>Tumblr Blog
+		</div>
+		</a>
+		<div class="text_exp">
+			<a href="http://empanadaintifada.tumblr.com/rss">
+			<img class="rss_button" src="/images/rss-button.png" alt="rss"/>
+			</a>
+		</div>
+		</a>
+	</li>
+
+</ul>
+</div>
+

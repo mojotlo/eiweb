@@ -1,38 +1,34 @@
 
 <%= render :partial => "shared/nav_bar"%>
 <div id="central_container">
+<%= render :partial => "shared/last_tweet"%>
+<div id="central_content">
 
-
-	<div id="left_column">
 		<% @event=@events.last %> 
 		<% if @event.date >= 32.hours.ago %> 
-
-		<div id="google_map">
-			<h3>Locations of upcoming events</h3>
+	<div id="column_left">
+			<div id="google_map">
+				<h3>Locations of upcoming events</h3>
 			
-			<%=   gmaps(
-			:map_options => {"auto_adjust" => true, 
-			  			"zoom" => 11, 
-			  			"auto_zoom"  => false,   
-			  			:last_map    => false},
-			 :markers     => {"data" => @json }
-			) %>
+				<%=   gmaps(
+				:map_options => {"auto_adjust" => true, 
+				  			"zoom" => 11, 
+				  			"auto_zoom"  => false,   
+				  			:last_map    => false},
+				 :markers     => {"data" => @json }
+				) %>
+			</div>
 		</div>
-			<% end %>
-		<%= render :partial => "shared/left_column"%>
-	</div>
-
-	
-	<div id="right_column">
+				<% end %>
 
 		<div id="events">
-			<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
 			<div id="event_intro">
+			<h1 class="title"> Events, Aspirations, and Tentative Plans </h1> 
+
 			<h3 class="twitter_caveat">
 				Check twitter feed for updates and details
 			</h3>
-		</div>			
-
+			</div>
 
 
 			<% @events=Event.find(:all, :order => :date) %> 
@@ -58,53 +54,40 @@
 
 					</span>
 					<div class="date_subcontainer">
-					<span class="event_month">
-						<%= @event.date.strftime("%b") %> 
-					</span>
-					<span class="event_date">
-						<%= @event.date.strftime("%d") %> 
-					</span>
-
-	
+						<span class="event_month">
+							<%= @event.date.strftime("%b") %> 
+						</span>
+						<span class="event_date">
+							<%= @event.date.strftime("%d") %> 
+						</span>
 					</div>
-
-
-
-				<% end %>
-
+					<% end %>
 				</div> 	
-
 				<div class="details_container">
-
-
 					<h1 class="event_name">
 					<%= link_to "#{@event.name}",  event_path(@event) %> 
 					</h1>
 					<p class="event_details">
 						<%= @event.details %> 
 					</p>
-						<% if @event.pending==true %>
-						<span class="pending">
-							(pending confirmation)
-						</span>
+					<% if @event.pending==true %>
+					<span class="pending">
+						(pending confirmation)
+					</span>
 
-						<% end %>
+					<% end %>
 				</div>
 
-					<div class="time_like_container">
-				<span class="event_time">
-					<%= @event.date.strftime("%l:%M%p") %> 			
-				</span>	
+				<div class="time_like_container">
+					<span class="event_time">
+						<%= @event.date.strftime("%l:%M%p") %> 			
+					</span>	
 					<div class="fb-like" data-href="http://www.empanadaintifada.com/events/<%="#{event.id}"%>" data-send="true" data-layout ="box_count" data-width="450" data-show-faces="true" data-action="recommend"  data-colorscheme="dark" data-font="verdana">
 					</div>
-
 				</div>
-
-			</div>	
-			<% last_date=event.date%> 
-
 			<% end %><!--end if event is later than today-->
-		
+			</div>
+			<% last_date=event.date%> 		
 			<% @event=@events.last %> 
 
 			<% end %><!--end for block-->
@@ -112,9 +95,10 @@
 			<h1 id="no_events">  No Events Scheduled</h1>
 			<% end %>
 	</div>
-	
-	
+	</div>			
 	
 
+	
+	 <%= render :partial => "shared/bottom_nav"%>
 </div>
 

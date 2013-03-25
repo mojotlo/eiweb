@@ -1,0 +1,31 @@
+<%= render :partial => "shared/nav_bar"%>
+<div id="central_container">
+
+	<%= render :partial => "shared/last_tweet"%>
+	<div id="central_content">
+			<img id="logo" src = "/images/empanada-logo.png" alt="logo"/>	
+		<section id="text_intro">
+				<h2 id="flash"><%= flash[:success] %></h2>
+		<h1> Stay in touch now, ya heard?</h1>
+			<p>It's always nice to hear from the ones you love.  That's why we text empanada lovers with our locations, menus, and special deals.  Here are your options:</p>
+		</section>			
+		<section id="options">
+			<h1> Receive a text message…</h1>
+
+
+			<h3>Option 1: …each morning with that day’s “plan.” </h3>
+			<p>Text 	 <span class="keyword">DAILY</span>		to (504) 684-5358 </p>
+			<h3>Option2: …when the Truck is coming to any of the below areas.  </h3>
+			<p>Text <span class="keyword" id="multiple"> any neighborhood name on the map below</span>			to (504) 684-5358</p>
+			<img src="/images/text_alerts_map.png" alt="map of text alerts by neighborhood.  Bywater, Frenchmen, CBD, Broad, Garden, Uptown, Tulane"/>
+		
+			<h3>Option 3: …Every time the empanada truck does anything ever.</h3>
+			<p>Text 	<span class="keyword"> FANATIC</span>		to (504) 684-5358 
+		</section>
+
+
+</div>
+ <%= render :partial => "shared/bottom_nav"%>
+</div>
+
+

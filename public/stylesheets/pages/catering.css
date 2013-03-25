@@ -4,16 +4,17 @@
 li#catering {background: url("/images/empanada-logo-background-only.png");}
 li#catering a:hover {color: black;}
 
+#contact_info {float: left;}
+
+#party h2 {float: left; width: 100%, padding: 0; font-family: "arabolic"; font-size: 2em; color: white;}
 
 
-#right_column h2 {float: left; width: 100%, padding: 0; font-family: "arabolic"; font-size: 2em; color: white;}
-
-
-#right_column p {float: left; width: 100%; margin: 0; margin-bottom: 1em;}
-#right_column h3 {float: left; width: 100%; font-family: "arabolic"}
+#party p {float: left; width: 100%; margin: 0; margin-bottom: 1em;}
+#party h3 {float: left; width: 100%; font-family: "arabolic"}
 #party img {float: left; width: 49%;}
 img#cell {float: left; width: 30%;}
 
+#party {float: left;}
 h2#text-title {font-size: 2em; width: 30%}
 a.signup_button_round {color: white; font-weight: 900;}
 .success {font-family: "arabolic"; font-size: 1.9em; float: left; width: 100%; color: white;}

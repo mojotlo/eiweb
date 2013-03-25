@@ -32,6 +32,10 @@ class PagesController < ApplicationController
     @title = "Latin American Street Food Catering in the finest New Orleans Tradition.  In and Out Catering with Soul Food, Creole Food, and South American dishes."
     @user=User.new
   end
+  def text_message
+    @title = "Receive text alerts from the Empanada Intifada Food Truck."
+    @user=User.new
+  end
   def flyer_download
       send_file "#{RAILS_ROOT}/public/images/this-is-not-a-food-truck-blank-flyer2.jpg"
   end

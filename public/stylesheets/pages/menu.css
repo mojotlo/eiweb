@@ -7,10 +7,10 @@ li#menu a:hover {color: black;}
 #right_column img {float: left; margin-top: .3em; width: 40em;}
 #right_column a {color: white;}
 
-#menu_container {margin-top: .5em; float: left; width: 100%; background: black; }
+#menu_container {margin-top: .5em; float: left; width: 80%; margin-left: 10%; margin-right: 10%;  background: black; }
 
 #menu_container p, #menu_container h1, #menu_container h2 {float: left; } 
-#watermark {padding: 1em; background: url("/images/menu-background.png"); float: left; margin: 1.5em; }
+#watermark {padding: 1em; background: url("/images/menu-background.png") repeat 50% 0%; float: left; margin: 1.5em; }
 
 #menu_top {float: left; width: 100%; }
 #menu_top h1 {margin: 0 auto; text-align: center; width: 80%;}

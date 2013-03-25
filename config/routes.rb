@@ -6,6 +6,7 @@ Eiweb::Application.routes.draw do
   match  "/follow" => "users#new"
   match  '/contact' => 'pages#contact'
   match  '/art' => 'pages#art'    
+  match  '/text_message' => 'pages#text_message'    
   match  '/about' => 'pages#about'
   match '/menu' => 'pages#menu'   
   match '/blog' => 'pages#blog'   

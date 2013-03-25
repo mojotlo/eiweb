@@ -3,17 +3,6 @@
 <div id="central_container">
 
 
-	<div id="left_column">
-	<%= render :partial => "shared/left_column"%>
-	</div>
-	<div id="right_column">
-		<section class="round">
-			<% flash.each do |key, value| %>
-			<div class="flash <%=key %>"><%= value %></div>
-			<% end %>
-			<%= yield %>
-		</section>
-
 <%= render :partial => "shared/contact_header"%>
 <div id="party">
 <h2>Catering and Private Parties</h2>
@@ -27,5 +16,8 @@
 <p>We've been there for birthday parties, wedding after-parties, festivals, work meetings, film shoots, engagement parties, rehearsals, fundraisers, soirees, shindigs, and the occasional hootenanny.  We hope yours is next.</p> 
 <p>Contact us for details: empanada.intifada@gmail.com or (504) 684-5358</p>
 </div>
+
+
+ <%= render :partial => "shared/bottom_nav"%>
 
 </div>
