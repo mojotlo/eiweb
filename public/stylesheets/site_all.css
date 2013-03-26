@@ -9,7 +9,7 @@ body {background-color:  #57b6dd;}
 
 @font-face {
   font-family: "Rockwell-Extra-Bold";
-	src: url(/stylesheets/fonts/rockwell-extra-bold.eot);
+	src: url(/stylesheets/fonts/rockwell_extra_bold.eot);
 	src: local('rockwell-extra-bold'),
   	url(/stylesheets/fonts/rockwell-extra-bold.ttf) format("truetype");
 }
