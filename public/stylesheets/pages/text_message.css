@@ -1,5 +1,5 @@
 @import url("/stylesheets/site_all.css");
-#flash {background: black; float: left;}
+#flash {background: black; float: left; width: 100%;}
 #text_intro {width: 67%; float: left;}
 #options {width: 58%; float: left;}
 

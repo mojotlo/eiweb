@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'mail'
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.13'
 gem 'pg'
 gem 'rmagick' 
 gem "paperclip", "~> 2.7"
