@@ -9,9 +9,9 @@ body {background-color:  #57b6dd;}
 
 @font-face {
   font-family: "Rockwell-Extra-Bold";
-	src: url(/stylesheets/fonts/rockwell_extra_bold.eot);
+	src: url(/stylesheets/fonts/Rockwell_Extra_Bold.eot);
 	src: local('rockwell-extra-bold'),
-  	url(/stylesheets/fonts/rockwell-extra-bold.ttf) format("truetype");
+  	url(/stylesheets/fonts/Rockwell-Extra-Bold.ttf) format("truetype");
 }
 
 @font-face {
